@@ -3,23 +3,23 @@ Farmyard Flip
 
 ## **Project Aim**
 
-Welcome to this memory game for children aged 2-5 years age. The simple and easy to navigate page is eye catching and helps children improve their memory.  On this site I hope you will be able to easily navigate the information about the game and also able to access it on mobile, tablet and desktop.
+Welcome to this memory game for children aged 2-5 years age. The simple and easy to navigate game is eye catching and helps children improve their memory.  On this site I hope you will be able to easily navigate the information about the game and also able to access it on mobile, tablet and desktop.
 
 ## **Table of Contents**
 
-* [User Experience (UX)](#user-experience)
+1 [User Experience (UX)](#user-experience)
     * [User Goals](#user-goals)
     * [Owner Goals](#owner-goals)
     * [User Stories](#user-stories)
-* [Design](#design)
+2 [Design](#design)
     * [Colour Scheme](#color-scheme)
     * [Typography](#typography)
     * [Imagery](#imagery)
-* [Wireframes](#wireframes)
-* [Technologies Used](#technologies-used)
+3 [Wireframes](#wireframes)
+4 [Technologies Used](#technologies-used)
     * [Languages Used](#language-used)
     * [Frameworks, Libraries and Programmes used](#frameworks,-libraries-and-programmes-used)
-* [Testing](#testing)
+5 [Testing](#testing)
     * [Testing User Stories from User Experience](#testing-user-stories-from-user-experience)
     * [Existing Features](#existing-features)
     * [Navigation](#navigation)
@@ -32,15 +32,15 @@ Welcome to this memory game for children aged 2-5 years age. The simple and easy
     * [Classes](#classes)
     * [Contact](#contact)
     * [Features to be implemented](#features-to-be-implemented)
-* [Further Testing](#further-testing)
+6 [Further Testing](#further-testing)
     * [Navigation](#navigation)
     * [Known Bugs](#known-bugs)
     * [Note about Commits](#note-about-commits)
-* [Deployment](#deployment)
+7 [Deployment](#deployment)
     * [Github Pages](#github-pages)
     * [Forking Github Repository](#forking-github-repository)
     * [Making a Local Clone](#making-a-local-clone)
-* [Credits](#credits)
+8 [Credits](#credits)
     * [Code](#code)
     * [Content](#content)
     * [Media](#media)
@@ -94,7 +94,7 @@ Welcome to this memory game for children aged 2-5 years age. The simple and easy
 
  * To be able to turn the sound off if it becomes too distracting.
  
- * To know that it's safe for my child to use and that there are no links etc. 
+ * To know that it's safe for my child to use and that there are no links to anything that is not child friendly. 
 
  * Be able to contact the game developer if I have any questions.  
 
@@ -106,13 +106,13 @@ Welcome to this memory game for children aged 2-5 years age. The simple and easy
 
 ![Colour Scheme](screenshots/colour-scheme.png)
 
- * The main colour is a orange/peach/pink colour (rgba(235, 131, 46, 0.548)) for the background, footer is rgba(236, 151, 93, 0.6), tables and text boxes are rgba(245, 94, 24, 0.582).
- The idea is that the colours are child friendly.
+ * The colours that have been chosen are primary colours so there easy to see and stand out.
+ The idea is that the colours are child friendly and colours that are associated with the farm.
     
 
 #### * **Typography**
 
-* The [Roboto](https://fonts.google.com/specimen/Roboto?selection.family=PT+Serif|Roboto:700&query=Rob) font is the main font used throughout the website with Exo as the fallback font in case the font isn't imported correctly to the site. The Roboto font is used frequently in programming.
+* The idea behind the font style is taken from many web sites and applications for children, such as Sesame Street’s web sites. The font is rounded and playful, so sans serif font is used for larger headlines and interactive UI elements, while using simpler, more traditional fonts for the more adult links at the bottom of the page. (https://www.uxmatters.com/mt/archives/2011/06effective-use-of-typography-in-applications-for-children-3.php)
 
 #### * **Imagery**
 
@@ -129,22 +129,22 @@ Repeating the same rounded corner pattern throughout the page keeps consistency 
 
 #### * **Cards**
 
-Disney and Pixar characters were chosen for this game because they are recognised and loved by children. Cars characters were specifically chosen because it is extremely popular with boys, the Frozen characters because they are very popular with girls, and the Toy Story Characters because they appeal to both girls and boys.
+Farm animals were chosen for this game because they are recognised and loved by children, especially my children! We live in a farming community so this is a perfect choice for children in my area. It is inspired by the song "Old MacDonald" as lots of children recognise the song. 
 
 #### * **Audio**
 
-To continue the feeling of a game made for children, clicking button sounds were added that are similar to the sounds a child might hear when operating a physical toy with buttons.
+The sounds were chosen to reflect the sounds of everyday toys. 
 The card flipping sounds and "bing" on a correct match were added to give positive feedback on use of the game.
-The sound of applauding children played on completing the game was chosen because it appeals most to children, and again fits within the theme of PicFlip!
+The sound of applauding children played on completing the game was chosen because it appeals most to children. 
 
 
 ### * **Wireframes**
 
-* Desktop wireframe - [view](wireframes/yoga-desktop.bmpr)
+* Desktop wireframe - [view]()
 
-* Tablet wireframe - [view](wireframes/yoga-tablet.bmpr)
+* Tablet wireframe - [view]()
 
-* Mobile wireframe - [view](wireframes/yoga-mobile.bmpr)
+* Mobile wireframe - [view]()
 
 [Back to top](#table-of-contents)
 
@@ -158,7 +158,7 @@ The sound of applauding children played on completing the game was chosen becaus
 
 * [CSS](https://en.wikipedia.org/wiki/CSS)
 
-* [Javascript]()
+* [Javascript](https://en.wikipedia.org/wiki/JavaScript)
 
 ### * **Framework, Libraries & Programmes Used** 
 
@@ -169,7 +169,7 @@ The sound of applauding children played on completing the game was chosen becaus
     * Hover.css was used on the Social Media icons in the footer to add the float transition while being hovered over.
 
 * [Google Fonts](https://fonts.google.com/)
-    * Google fonts were used to import the 'Roboto' font into the style.css file which is used on all pages throughout the project.
+    * Google fonts was used to import the sans serif font into the style.css file which is used on all pages throughout the project.
 
 * [Font Awesome](https://fontawesome.com/)
     * Font Awesome was used throughout the website to add icons to appeal to the eye.
@@ -189,9 +189,9 @@ The sound of applauding children played on completing the game was chosen becaus
 
 The W3C Markup Validator and W3C CSS Validator were used to validate every page of the project to ensure there were no errors in the code. 
 
-* [W3C Markup Validator](https://validator.w3.org/#validate_by_input) - [Index](validator/index.pdf) [About](validator/about.pdf) [Classes](validator/classes.pdf) [Gallery](validator/gallery.pdf) [Contact](validator/contact.pdf)
+* [W3C Markup Validator](https://validator.w3.org/#validate_by_input) - [Index]()
 
-* [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) - [Results](validator/css.pdf)
+* [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) - [Results]()
 
 #### * **Testing User Stories from User Experience**
 
@@ -412,11 +412,6 @@ The form worked but without feedback it is not user friendly.
 
 * When looking at my live wesbite, dev tools has an error come up on each [page](screenshots/devtools.png). I have found the explanation on [Github](https://github.community/t/i-have-no-idea-what-the-interest-cohort-is/179780/2) which explains it's to ensure the privacy of our users when browsing GitHub Pages sites. So due to this I have left the page as it is.  
 
-### **Note about Commits**
-
-* IMPORTANT - Previous commits have been wiped due to problems with Gitpod on 29/7/21, fortunately I was able to recover some of my work and create a new workspace.
-
-
 [Back to top](#table-of-contents)
 
 ### **Deployment** 
@@ -426,7 +421,7 @@ The form worked but without feedback it is not user friendly.
 The project was deployed to Github pages using the following steps:
 
 * Log into [GitHub](https://github.com/) and locate the GitHub Repository (gemmaellis16
-/yoga-project).
+/memory_game).
 * In the navbar on the top right hand side press the "Settings" button.
 * Locate [Pages](screenshots/gitpod-pages) on the left hand side of the page.
 * Click "None on the source section and choose "Master Branch" on the source field and then choose "docs".
@@ -439,7 +434,7 @@ The project was deployed to Github pages using the following steps:
 Forking means to make a copy of the original document so that you can view/edit without it altering the original repository. It can be forked using the following steps:
 
 * Log into Github and locate the [Github Repository](https://github.com)
-* Enter gemmaellis16/yoga-project.
+* Enter gemmaellis16/memory_game.
 * At the top right of the navbar (above the profile icon), press the "Fork" button.
 * This will enable you to get a copy of the original repository in your Github account.
 
@@ -490,7 +485,7 @@ Cloning means creating a local copy of the remote repository. This allows you to
 
 ### **Content**
 
-* Content was written by me, the developer - this is the content I created on my yoga flyer while studying to be a yoga teacher in 2016. 
+* Content was written by the developer - and inspired by books and toys that my toddler has.
 
 ### **Media** 
 
@@ -502,8 +497,8 @@ Cloning means creating a local copy of the remote repository. This allows you to
 
 ### **Aknowledgments** 
 
-* Tutors at Code Institute for their support, they really helped when I was feeling that I was unable to grasp all the styling issues.
-* My new mentor for advice on the finishing touches on the project.
+* Tutors at Code Institute for their support.
+* My mentor for being so down to earth, with briliant advice and support on the project.
 
 
 [Back to top](#table-of-contents)
