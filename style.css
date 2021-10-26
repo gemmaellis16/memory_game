@@ -1,0 +1,229 @@
+https://itsourcecode.com/free-projects/jsprojects/memory-game-in-javascript-with-source-code/
+
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Finger+Paint&display=swap');
+
+body{
+    font-family: 'jokerman', cursive;
+    background-color: skyblue;
+}
+
+h1{
+    color: white;
+}
+
+#gameboard{ 
+    margin: 5vh auto;
+    height: 60vh;
+    width: 60vw;
+}
+
+.gametile{
+    height: 15vh;
+    width: 15vw;
+    line-height: 15vh;
+    background-color: #44445a;
+    color: white;
+    text-align: center;
+    font-size: 0em;
+    border: 2px solid #55555a
+}
+
+#timer div, #score div, #clicks div{
+    margin: 10px auto 25px auto;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    border: 3px solid #555;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 2em;
+    text-transform: capitalize;
+}
+
+.label{
+    margin-top: 20px;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+}
+
+.btn{
+    text-align: center;
+    width: 100%;
+    padding: 2%;
+    margin-bottom: 10%;
+    font-weight: 600;
+    font-size: 2.5em;
+}
+
+.displayTile{
+    font-size: 3em;
+}
+
+.hideTile{
+    font-size: 0em;
+    background-color: #44445a;
+}
+
+.correctAnswer{
+    background-color: green;
+}
+
+.falseAnswer{
+    background-color: red;
+}
+
+
+</style>
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Finger+Paint&display=swap');
+ 
+body{
+    font-family: 'jokerman', cursive;
+    background-color: skyblue;
+}
+ 
+h1{
+    color: white;
+}
+ 
+#gameboard{
+    margin: 5vh auto;
+    height: 60vh;
+    width: 60vw;
+}
+ 
+.gametile{
+    height: 15vh;
+    width: 15vw;
+    line-height: 15vh;
+    background-color: #44445a;
+    color: white;
+    text-align: center;
+    font-size: 0em;
+    border: 2px solid #55555a
+}
+ 
+#timer div, #score div, #clicks div{
+    margin: 10px auto 25px auto;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    border: 3px solid #555;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 2em;
+    text-transform: capitalize;
+}
+ 
+.label{
+    margin-top: 20px;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+}
+ 
+.btn{
+    text-align: center;
+    width: 100%;
+    padding: 2%;
+    margin-bottom: 10%;
+    font-weight: 600;
+    font-size: 2.5em;
+}
+ 
+.displayTile{
+    font-size: 3em;
+}
+ 
+.hideTile{
+    font-size: 0em;
+    background-color: #44445a;
+}
+ 
+.correctAnswer{
+    background-color: green;
+}
+ 
+.falseAnswer{
+    background-color: red;
+}

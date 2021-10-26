@@ -64,7 +64,7 @@ Welcome to this memory game for children aged 2-5 years age. The simple and easy
 ### **Owner Goals**
 
  * Clean programming so that the game cannot have problems when too many buttons are clicked at once.  
- * A simple yet effective game that's eye catching for the children so taht they want to play it time and time again. 
+ * A simple yet effective game that's eye catching for the children so that they want to play it time and time again. 
 
 
 ### **User Stories**
