@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Finger+Paint&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+body {
+        text-align: center;
+        background-image: url('assets/images/farm.png');
+        background-size: 50%;
+      }
+  
+.game-info-container {
+        grid-column: 1 / -1;
+        display: flex;
+        justify-content: space-between;
+      }
+      
+.game-info {
+        color: #FFBB89;
+        font-size: 4em;
+      }
+      
+.game-container {
+        margin: 50px auto;
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        grid-gap: 10px;
+        justify-content: center;
+        perspective: 500px;
+      }
+      
+  .card {
+      position: relative;
+      height: 175px;
+      width: 125px;
+    }
+  
