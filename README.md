@@ -1,53 +1,54 @@
 
-Farmyard Flip
+# **Farmyard Flip**
+
 
 ## **Project Aim**
 
 Welcome to this memory game for children aged 2-5 years age. The simple and easy to navigate game is eye catching and helps children improve their memory.  On this site I hope you will be able to easily navigate the information about the game and also able to access it on mobile, tablet and desktop.
 
+
 ## **Table of Contents**
 
 1 [User Experience (UX)](#user-experience)
-    * [User Goals](#user-goals)
-    * [Owner Goals](#owner-goals)
-    * [User Stories](#user-stories)
+* [User Goals](#user-goals)
+* [Owner Goals](#owner-goals)
+* [User Stories](#user-stories)
+
 2 [Design](#design)
-    * [Colour Scheme](#color-scheme)
-    * [Typography](#typography)
-    * [Imagery](#imagery)
+* [Colour Scheme](#color-scheme)
+* [Typography](#typography)
+* [Imagery](#imagery)
+
 3 [Wireframes](#wireframes)
+
 4 [Technologies Used](#technologies-used)
-    * [Languages Used](#language-used)
-    * [Frameworks, Libraries and Programmes used](#frameworks,-libraries-and-programmes-used)
+* [Languages Used](#language-used)
+* [Frameworks, Libraries and Programmes used](#frameworks,-libraries-and-programmes-used)
+
 5 [Testing](#testing)
-    * [Testing User Stories from User Experience](#testing-user-stories-from-user-experience)
-    * [Existing Features](#existing-features)
-    * [Navigation](#navigation)
-    * [Main Image](#main-image)
-    * [Cover Text](#cover-text)
-    * [Benefits](#benefits)
-    * [Testimonials](#testimonials)
-    * [About Section](#about-section)
-    * [Gallery](#gallery)
-    * [Classes](#classes)
-    * [Contact](#contact)
-    * [Features to be implemented](#features-to-be-implemented)
+* [Testing User Stories from User Experience](#testing-user-stories-from-user-experience)
+* [Existing Features](#existing-features)
+* [Features to be implemented](#features-to-be-implemented)
+
 6 [Further Testing](#further-testing)
-    * [Navigation](#navigation)
-    * [Known Bugs](#known-bugs)
-    * [Note about Commits](#note-about-commits)
+* [Navigation](#navigation)
+* [Known Bugs](#known-bugs)
+* [Note about Commits](#note-about-commits)
+
 7 [Deployment](#deployment)
-    * [Github Pages](#github-pages)
-    * [Forking Github Repository](#forking-github-repository)
-    * [Making a Local Clone](#making-a-local-clone)
+* [Github Pages](#github-pages)
+* [Forking Github Repository](#forking-github-repository)
+* [Making a Local Clone](#making-a-local-clone)
+
 8 [Credits](#credits)
-    * [Code](#code)
-    * [Content](#content)
-    * [Media](#media)
-    * [Acknowledgments](#acknowledgments)
+* [Code](#code)
+* [Content](#content)
+* [Media](#media)
+* [Acknowledgments](#acknowledgments)
 
 
 ## **User Experience (UX)**
+
 
 ### **User Goals**
 
@@ -104,7 +105,7 @@ Welcome to this memory game for children aged 2-5 years age. The simple and easy
 
 #### * **Colour Scheme**
 
-![Colour Scheme](asset.png)
+![Colour Scheme](assets/images/colors.png)
 
  * The colours that have been chosen are vibrant colours so there easy to see and stand out.
  The idea is that the colours are child friendly and colours that are associated with the farm.
@@ -210,26 +211,23 @@ The W3C Markup Validator and W3C CSS Validator were used to validate every page 
     - There will also be a contact tool at the footer of the page.
 
 
+* As a user, I want it to be simple and fun
 
-* As a user, I want to know what yoga is and what are it's [benefits](screenshots/benefits.png).
+ - Attractive colours, buttons and sounds.
+
+ - Not too many colours and not too much content.
 
 * **Returning Visitor Goals**
 
-* As a user, I want to find the best way to get into [contact](screenshots/contact.png) with the studio with any questions I may have. 
+* As a user, I want to see the score.  
 
-    - The navigation bar clearly highlights the 'Contact page'.
+    - The score gives feedback to see if they can beat it.
 
-    - Here, they can fill out the form on the page (but I have not linked it to anything as this out of the scope of the MS1 project).
 
-    - There is also the direct [phone number or email](screenshots/email.png) of the studio (fictional).
+* As a user, I want to see the contact info.
 
-    - The [footer](screenshots/footer.png) contains links to Facebook, Twitter and Instagram (to the main pages of the social media homepages and not to the teachers own account due to privacy purposes).
+    - This will be at the foot of the page.
 
-* As a user, I want to find out the [membership](screenshots/prices.png) options
-
-    - In the classes page [prices](screenshots/prices.png) are clearly labelled for the visitor to view.
-
-* As a user, I want to find out what days and times the [yoga](screenshots/timetable.png) sessions are on.
 
 [Back to top](#table-of-contents)
 
@@ -241,17 +239,17 @@ The W3C Markup Validator and W3C CSS Validator were used to validate every page 
 
 ### **Existing Features**
 
-#### **Navigation**
+#### **Grid**
 
-For the [navigation bar](screenshots/navigation.png) I have used Boostrap to create a responsive navbar as well as the hamburger [icon](screenshots/navbar-image) for mobile devices to be more user-friendly. 
+For the [grid](screenshots/navigation.png) I have used Boostrap. 
 
-#### **Main Image**
+#### **Image**
 
-The main [image](assets/css/images/yoga-main.jpg) is of a yoga pose on the beach during sunset from the website unsplash. It creates a warm, calming feeling. The yoga pose is a simple pose that all abilities can perfrom so wouldn't put off any beginners or unconfident students.
+The background [image](assets/css/images/yoga-main.jpg) is of a farm landscape to bring the farm landscape to the attention of the child.
 
-#### **Cover Text**
+#### **Pop up Modal**
 
-The main idea to put [cover text](screenshots/cover-text) over the image was to grab the users attention immediately - one box is to get them to book a session straight away or to have that in their minds immediately and the second box is to explain the definition of yoga so that a beginner understands the purpose.
+The main idea to put a[pop up modal](screenshots/cover-text) over the image was to grab the users attention immediately - one box is to get them to book a session straight away or to have that in their minds immediately and the second box is to explain the definition of yoga so that a beginner understands the purpose.
 
 #### **Benefits**
 
@@ -285,23 +283,21 @@ At the top of the page I placed the [form](screenshots/form-input.png) so that i
 
 ### * **Features to be implemented**
 
-* When submitting the form, the information should be sent to the yoga studio email account.
+* When submitting the form, the information should be sent to Dr Chick's game account.
 * Chat bot that can assist the user.
-* Interactive map for the location with a link to google maps.
+* Interactive scoreboard.
 * Include information on how their data will be used (GDPR-Law).
-* Yoga videos for those that can not attend class.  
-* One scrollable page with all the information on one page to make it user friendly.
 
 
 ### * **Further Testing**
 
 * The website was tested on Google Chrome and Safari browsers.
 
-* The website was viewed on a variety of devices such as desktop, laptop, tablet and iphone. 
+* The game was viewed on a variety of devices such as desktop, laptop, tablet and iphone. 
 
-* A large amount of testing was conducted to ensure that all pages were linking correctly.
+* A large amount of testing was conducted to ensure that all buttons were working correctly.
 
-* Friends were asked to review the site and content to point out any bugs/user experience.
+* My toddler and some of my pupils in school were asked to play the game and asked to give feedback.
 
 [Back to top](#table-of-contents)
 
@@ -455,10 +451,8 @@ Cloning means creating a local copy of the remote repository. This allows you to
 
 ### **Media** 
 
-* All gallery images created by the developer - they are photos from a yoga studio I attended as part of my yoga teacher training in Spain. So the studio does not exist in North Wales (like I have stated but merely a fictional studio in Betws y Coed). The testimonial images have also been created by me. 
+* All images were from 
 
-* But as noted previously the main image is sourced from [unsplash](https://unsplash.com/photos/UvWx67Ivqe0).
-* The map on the contact page was sourced from [Google](https://www.google.co.uk/maps/place/Betws-y-Coed/@53.0910704,-3.8119933,15z/data=!3m1!4b1!4m5!3m4!1s0x48651463227a6575:0x2afbefd48524751d!8m2!3d53.0930858!4d-3.8010354?hl=en)
 
 
 ### **Aknowledgments** 
