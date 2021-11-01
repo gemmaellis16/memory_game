@@ -6,35 +6,45 @@
     box-sizing: border-box;
   }
   
-body {
-        text-align: center;
-        background-image: url('assets/images/farm.png');
-        background-size: 50%;
-      }
   
-.game-info-container {
-        grid-column: 1 / -1;
-        display: flex;
-        justify-content: space-between;
-      }
-      
-.game-info {
-        color: #FFBB89;
-        font-size: 4em;
-      }
-      
-.game-container {
-        margin: 50px auto;
-        display: grid;
-        grid-template-columns: repeat(4, auto);
-        grid-gap: 10px;
-        justify-content: center;
-        perspective: 500px;
-      }
-      
-  .card {
-      position: relative;
-      height: 175px;
-      width: 125px;
+    
+    html {
+      min-height: 100vh;
     }
+    
+    body {
+      margin: 0;
+      background: #f3ef1479;
+    }
+    
+    .page-title {
+      color: #FF6D00;
+      font-family: Creepy, serif;
+      font-weight: normal;
+      text-align: center;
+      font-size: 6em;
+    }
+    
   
+    .grid-wrapper {
+      display: grid;
+      grid-template-columns: repeat(4, 100px);
+      grid-gap: 1em;
+      justify-content: center;
+      perspective: 500px;
+      margin: 20px auto;
+    }
+    
+    .grid-item {
+      background-color: rgb(60, 177, 31);
+      height: 100px;
+      width: 100px;
+      border-radius: 10px;
+    }
+    
+
+.card {
+    position: relative;
+    height: 175px;
+    width: 125px;
+  }

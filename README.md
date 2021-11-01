@@ -104,9 +104,9 @@ Welcome to this memory game for children aged 2-5 years age. The simple and easy
 
 #### * **Colour Scheme**
 
-![Colour Scheme](screenshots/colour-scheme.png)
+![Colour Scheme](asset.png)
 
- * The colours that have been chosen are primary colours so there easy to see and stand out.
+ * The colours that have been chosen are vibrant colours so there easy to see and stand out.
  The idea is that the colours are child friendly and colours that are associated with the farm.
     
 
@@ -116,16 +116,14 @@ Welcome to this memory game for children aged 2-5 years age. The simple and easy
 
 #### * **Imagery**
 
-* The background image of toy trains was chosen to give the feeling of playing the game in a child's playroom.
-Specifically chosen because it is a "flat-lay" - a photograph taken from directly above - this means the background complements the game without distracting from it.
-The background images for the modals were chosen for their comic-book like qualities, adding a little positive emotional feedback at a level that appeals to a child.
+* The background of a simple farm image was used in order to keep with the theme but not too busy to distract the user from the main game. 
+
 
 [Back to top](#table-of-contents)
 
 
 #### * **Styling**
-Cards and container boxes were given rounded corners to continue the child friendly theme, many real life memory cards for children have corners like this.
-Repeating the same rounded corner pattern throughout the page keeps consistency in design and maintains the feeling that all elements belong together.
+Th cards have rounded corners as other memory cards that I have seen for children have corners like this - so it looks attractive for this age group. I also use all boxes like this because I think keeping the same rounded corner pattern throughout the page keeps consistency in design and maintains the feeling that all elements belong together.
 
 #### * **Cards**
 
@@ -133,12 +131,12 @@ Farm animals were chosen for this game because they are recognised and loved by 
 
 #### * **Audio**
 
-The sounds were chosen to reflect the sounds of everyday toys. 
-The card flipping sounds and "bing" on a correct match were added to give positive feedback on use of the game.
-The sound of applauding children played on completing the game was chosen because it appeals most to children. 
+The sounds were chosen to reflect the sounds of farm animals or toys that most children are familiar with. The card flipping sounds and "bing" on a correct match were added to give positive feedback for the children and the sound of applause has been used on completing the game as it appeals to most users in order to let them know that they have completed the game.
 
 
 ### * **Wireframes**
+
+These are my wireframes that I initially made however I have edited my ideas during the coding process.
 
 * Desktop wireframe - [view]()
 
@@ -197,27 +195,21 @@ The W3C Markup Validator and W3C CSS Validator were used to validate every page 
 
 * **First Time Visitor Goals**
 
-* As a user, I want to easily understand the main purpose of the site and learn more about the studio.
+* As a user, I want to easily understand the game and to be kept interested.
 
-    - When entering the site users will see a readible [navigation bar](screenshots/navigation.png) to get to the page of their choice. Even when they are on a specific page they can press the 'Gemma Ellis Yoga' logo to return to the main page.
+    - When entering the site users will see a a pop up modal to write their name and choose their level.
 
-    - On the contact us page you must input your details or the form will ask for it and you will be unable to submit the [form.](screenshots/form-input.png)
+    - On the main page, to the left of the screen the username and level will be shown then the to the right will be the page title and different buttons()
 
-    - On the about page I want to clearly locate the [New student registration form](screenshots/student-reg.png) to fill it out and bring with me to the first session. 
+    - Upon scrolling the page the main card game will appear big and the center of the page. 
 
-* As a user, I am curious to know more about the owner/studio
+* As a user, I am curious to know more about the game
 
-    - On the homepage users can scroll down and see student [testimonials](screenshots/testimonials.png) and be clear that the studio is a friendly environment with a good teacher.
+    - There will be a 'i' button to explain the rules.
 
-    - Clearly labelled 'About' page on navigation bar.
+    - There will also be a contact tool at the footer of the page.
 
-    - The [About](screenshots/about.png) page contains a photo of the teacher and short paragraph about her experience.  
 
-    - There is an example relaxation audio for users to listen and decide if it's something they would like to experience.
-
-* As a user, I want to view the studio and student/teachers [gallery](screenshots/gallery.png) to view the environment so I can decide if it's the class I'd like to participate in. 
-
-    - In the navigation bar there is a clearly labelled 'Gallery' page with images of inside the studio, with students and outside of the studio. 
 
 * As a user, I want to know what yoga is and what are it's [benefits](screenshots/benefits.png).
 
@@ -406,11 +398,6 @@ The form worked but without feedback it is not user friendly.
 
 * I had many issues on the mobile display trying to get the hamburger icon to sit on the right in the [navbar](screenshots/mobile-issue.png)so using float:right and position:absolute helped the issue.
 
-* On the laptop view I also had issues with making my text in the [navbar](screenshots/laptop-issue.png) sit to the right (float:right) with correct spacing (line-spacing:4px) this helped solve the issue. 
-
-* I also had issues with my [map](screenshots/map.png) - after the validator not liking my iframe in the html I decided to change the map, which gave me styling issues so it took me quite a long time to [center](screenshots/map-center.png) the image, and correct the height as I was confusing between the map-wrapper, map and iframe in the css. As a result I targeted the iframe with an id and then used min-height: 360px; and width: 600px.
-
-* When looking at my live wesbite, dev tools has an error come up on each [page](screenshots/devtools.png). I have found the explanation on [Github](https://github.community/t/i-have-no-idea-what-the-interest-cohort-is/179780/2) which explains it's to ensure the privacy of our users when browsing GitHub Pages sites. So due to this I have left the page as it is.  
 
 [Back to top](#table-of-contents)
 
@@ -458,34 +445,13 @@ Cloning means creating a local copy of the remote repository. This allows you to
 
 ### **Code**
 
-* The full screen image came from [unsplash](https://unsplash.com/photos/UvWx67Ivqe0)
-
-* [Bootstrap](https://getbootstrap.com/docs/4.5/getting-started/introduction/) Bootstrap library used throughout the project to make the site responsive to the Bootstrap grid system.
-
-* The testimonials idea was taken from the quotes section in the [Whiskey project](https://learn.codeinstitute.net/courses/course-v1:codeinstitute+FE+2017_T3/courseware/a4b90d17e5c94220a0f83f00ce7fa606/2aca2c94a518427495cc1b4bc641ccbf/)
-
-* The footer idea was taken from the [Coffeehouse project](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+CSE101+2020_Q2/courseware/d6dd40a51a9543e78b59924c739abff5/2f123befba874366823427fa9f2a2262/2?activate_block_id=block-v1%3ACodeInstitute%2BCSE101%2B2020_Q2%2Btype%40vertical%2Bblock%40da616ef1efe748bd84d36aa804ffead9)
-
-* The main image code was taken from the [Love Runnig project](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+CSE101+2020_Q2/courseware/be0e510a3aca4bccb6e0bba4cf7cf06b/83c6c94d55f44c79a3646810d80ce7a3/)
-* The cover text was sourced from the [Love Running project](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+CSE101+2020_Q2/courseware/be0e510a3aca4bccb6e0bba4cf7cf06b/83c6c94d55f44c79a3646810d80ce7a3/)
-* The benefits section was sourced and edited from the [Love Running Project](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+CSE101+2020_Q2/courseware/be0e510a3aca4bccb6e0bba4cf7cf06b/6eb8cfc87bfd434a87861a844e00b655/)
-* The gallery idea was sourced from the [Love Running project](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+CSE101+2020_Q2/courseware/be0e510a3aca4bccb6e0bba4cf7cf06b/0b88201f299f4e059c23977b8e25f27a/)
-* The contact us form was sourced from the [Love Running project](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+CSE101+2020_Q2/courseware/be0e510a3aca4bccb6e0bba4cf7cf06b/d533998456514d97a88ce691537e00a6/)
-
-* The download now idea on the about page was taken from the [Resume project](https://learn.codeinstitute.net/courses/course-v1:codeinstitute+FE+2017_T3/courseware/616289d66b5641a3808cc43e53842695/e1da3f354d874bbb8dbc996d658a66e8/)
-
-* I used the table content code from [W3schools](https://www.w3schools.com/howto/howto_css_about_page.asp/) for my about page. 
-* I used the table structure on my classes pages from [W3schools](https://www.w3schools.com/html/html_tables.asp)
-
-* I used a modal template for the book here button on my homepage from [Bootstrap](https://getbootstrap.com/docs/5.1/components/modal/)
-
-* I used [Bootstrap](https://getbootstrap.com/docs/4.5/components/navbar/) template or the navigation bar.
+* 
 
 [Back to top](#table-of-contents)
 
 ### **Content**
 
-* Content was written by the developer - and inspired by books and toys that my toddler has.
+* Content was written by the developer - and inspired by books and toys that my toddler owns.
 
 ### **Media** 
 
