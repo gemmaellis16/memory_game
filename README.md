@@ -4,7 +4,7 @@
 
 ## **Project Aim**
 
-Welcome to this memory game for children aged 2-5 years age. The simple and easy to navigate game is eye catching and helps children improve their memory.  On this site I hope you will be able to easily navigate the information about the game and also able to access it on mobile, tablet and desktop.
+Welcome to this memory game for children aged 2-5 years age. This simple game is easy to navigate, is eye catching and helps children improve their memory.  On this site I hope you will be able to easily find the information icon about the simple rules of the game and also able to access it on mobile, tablet and desktop.
 
 
 ## **Table of Contents**
@@ -57,20 +57,20 @@ Welcome to this memory game for children aged 2-5 years age. The simple and easy
 * It should be visually appealing for children with the images and colours.
 * The game should have sounds that are appealing to children such as an applause when completed to give positive feedback, sounds when the cards are turned.
 * The sound button should be able to be turned on/off as they please.
-* It should have three different levels from easy through to difficult easy(8 cards), medium(16 cards), difficult(20 cards)  
+* It should have three different levels from easy through to difficult easy(8 cards), medium(12 cards), difficult(16 cards)  
 * It should have a name option so that they can see their score on th scoreboard.
 * It should have a stop and reshuffle button option for the child. 
 * It should have a timer so that that their time is recorded 
 
 ### **Owner Goals**
 
- * Clean programming so that the game cannot have problems when too many buttons are clicked at once.  
+ * Clean code so that the game doesn't encouter problems when too many buttons are clicked at once.  
  * A simple yet effective game that's eye catching for the children so that they want to play it time and time again. 
 
 
 ### **User Stories**
 
-#### **As a player aged between 2-5years old I want:**
+#### **As a player (aged 2-5years old) I want:**
 
  * To understand the main purpose of the game and be able to use the buttons correctly.
 
@@ -93,11 +93,11 @@ Welcome to this memory game for children aged 2-5 years age. The simple and easy
 
  * To see the scoreboard to check if they've made progress.
 
- * To be able to turn the sound off if it becomes too distracting.
+ * To be able to turn the sound off if it becomes too repetitive.
  
  * To know that it's safe for my child to use and that there are no links to anything that is not child friendly. 
 
- * Be able to contact the game developer if I have any questions.  
+ * Be able to contact the developers if I have any questions.  
 
 [Back to top](#table-of-contents)
 
@@ -132,18 +132,18 @@ Farm animals were chosen for this game because they are recognised and loved by 
 
 #### * **Audio**
 
-The sounds were chosen to reflect the sounds of farm animals or toys that most children are familiar with. The card flipping sounds and "bing" on a correct match were added to give positive feedback for the children and the sound of applause has been used on completing the game as it appeals to most users in order to let them know that they have completed the game.
+The sounds were chosen to reflect the sounds of farm animals that most children are familiar with. The card flipping sounds and when the the user has a correct match were added to give positive feedback and the applause has been used on completing the game as it lets them know that they have completed the game.
 
 
 ### * **Wireframes**
 
 These are my wireframes that I initially made however I have edited my ideas during the coding process.
 
-* Desktop wireframe - [view]()
+* Desktop wireframe - [view](assets/wireframes/mobile)
 
-* Tablet wireframe - [view]()
+* Tablet wireframe - [view](assets/wireframes/tablet)
 
-* Mobile wireframe - [view]()
+* Mobile wireframe - [view](assets/wireframes/desktop)
 
 [Back to top](#table-of-contents)
 
@@ -168,7 +168,7 @@ These are my wireframes that I initially made however I have edited my ideas dur
     * Hover.css was used on the Social Media icons in the footer to add the float transition while being hovered over.
 
 * [Google Fonts](https://fonts.google.com/)
-    * Google fonts was used to import the sans serif font into the style.css file which is used on all pages throughout the project.
+    * Google fonts was used to import the sans serif and bubblegum fonts into the style.css file which is used on all pages throughout the project.
 
 * [Font Awesome](https://fontawesome.com/)
     * Font Awesome was used throughout the website to add icons to appeal to the eye.
@@ -182,6 +182,12 @@ These are my wireframes that I initially made however I have edited my ideas dur
 * [Balsamiq](https://balsamiq.com/)
     * Balsamiq was used to create the wireframes during design ideas.
 
+* [Coolers](https://coolors.co/)
+    * Coolers was used to create the colour scheme of the game during design. 
+
+* [Jasmine] (https://jasmine.github.io/)
+This project used Jasmine to automatically test all JavaScript and jQuery code.
+
 [Back to top](#framework-libraries-&-programmes-used)
 
 ###  * **Testing**
@@ -191,6 +197,8 @@ The W3C Markup Validator and W3C CSS Validator were used to validate every page 
 * [W3C Markup Validator](https://validator.w3.org/#validate_by_input) - [Index]()
 
 * [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) - [Results]()
+
+* [Jasmine](https://jshint.com/) - [Results]()
 
 #### * **Testing User Stories from User Experience**
 
@@ -217,7 +225,24 @@ The W3C Markup Validator and W3C CSS Validator were used to validate every page 
 
  - Not too many colours and not too much content.
 
-* **Returning Visitor Goals**
+* As a user, I want appealing sounds
+
+- For great audio feedback and to be kept interested.
+
+- Sounds that are recognisable within a farm setting.
+
+
+* As a user, I want the buttons to be child-friendly
+
+ - Buttons should be large so they are easy to press.
+
+As a user, I want the game to be simple so that it doesn't break
+
+- Only two cards can be flipped at once
+
+- It wont encouter problems if its clicked too fast
+
+* **Returning Visitor Goals and Parents**
 
 * As a user, I want to see the score.  
 
@@ -226,7 +251,11 @@ The W3C Markup Validator and W3C CSS Validator were used to validate every page 
 
 * As a user, I want to see the contact info.
 
-    - This will be at the foot of the page.
+    - This will be at the foot of the page if they encouter any problems.
+
+* As a user, I want to mute the game
+
+    - This is in case the sounds gets too repetitive and irritating. 
 
 
 [Back to top](#table-of-contents)
@@ -249,35 +278,46 @@ The background [image](assets/css/images/yoga-main.jpg) is of a farm landscape t
 
 #### **Pop up Modal**
 
-The main idea to put a[pop up modal](screenshots/cover-text) over the image was to grab the users attention immediately - one box is to get them to book a session straight away or to have that in their minds immediately and the second box is to explain the definition of yoga so that a beginner understands the purpose.
+The main idea to put a[pop up modal](screenshots/cover-text) and the beginning of the game was to grab the users attention immediately - by personilising it (through entering a name) and secondly to choose a level (easy, medium or hard) .
 
-#### **Benefits**
+#### **Main Page**
 
-The [Benefits](screenshots/benefits.png) idea was taken from the Love Running project - as its simple and eye catching for the user - with short explanations of what the benefits of yoga are to a beginner or even to remind the experienced yoga students. It is in three columns (taken from Bootstrap) to appear neat and tidy on the page with easily identifiable Font awesome icons to attract the user. 
+The [Main Page](screenshots/) is based on a farm theme - as its simple and eye catching for the user and lots of children (2-5 years) have experience with learning about farm animals (especially in the rural area we live in). It is in two columns (taken from Bootstrap) to appear neat and tidy on the page with easily identifiable Font awesome icons to attract the user. 
 
-#### **Testimonials**
+#### **Buttons**
 
-The [testimonials](screenshots/testimonials.png) section also used the grid from bootstrap and some icons to make the section more visually appealing with images from my own collection and different names for the people in the images (I have consent of these people).
+The [buttons](screenshots/) icons were used as they are widely known symbols so for kids its easy to identify them rather than reading any words - as they may not know how to read so symbols are easy to recognise. 
+- "I" symbol for the rules and information on the game
+- "Mute" button to turn the sound on/off as the user wishes.
+- "Reset" button to start the game over.
+- "Star" symbol for the scoreboard.
+- "Time" symbol to keep the time of completed game.
+- "Number" symbol to keep record of how many times cards were flipped over.
 
-#### **About Section**
+#### **Cards**
 
-I used an example layout from W3 website to create the [about](screenshots/about.png) section to introduce the user to the teacher. With the same image layout that was used in the testimonials section for consistency over the pages.
+The cards were chosen becuase they were farm animals - and I chose similiar looking animals (front facing with big eyes) so that they kept with the theme and looked more attractive.
 
-I added an [information/etiquette/tips](screenshots/info.png) section because as a new student to yoga they may feel uncomfortable entering a studio without any prior knowledeg of what to bring and of what to expect ect so this may help those that are unconfident accessing the studio alone. 
+The number of cards were chosen (easy - 8) mainly because it was important to keep the number low as the user for this specific game is designed to be for 2-5 year olds. 
+2 rows of 4 coloums on a desktop.
+3 rows of 3/4 coloumn on mobile and desktop
 
-In addition I added two downloadable links on this page, one of a sample relaxation script which had [audio](screenshots/audio-image.png) and the second of a student registration [form](screenshots/student-form.png) that would be required upon visiting the studio for the first time. Again I added fontawesome icons to the headers to be more appealing.
+The number of cards on the medium level (12) were chosen as its a gradual step up and would fit nicely on 3 rows of 4 coloumn on a desktop.
 
-#### **Gallery**
+The number of cards on the hard level (16) were chosen agian for the gradual step up and would fit nicely on a 4x4 basis.
 
-I wanted three columns and three rows of images in the [gallery](screenshots/gallery-mobile.png) so it would be appealing to the eye on desktop view and then down to two columns in mobile view so that images didn't appear stretched or pixlated. I did originally put in the wireframes that I wanted one column in the mobile view but this wouldn't appear balanced in my opinion. So there are 12 images which appear balanced in the gallery(balance is at the heart of yoga so I wanted the website to appear balanced as much as possible throughout).
 
-#### **Classes**
+#### ****
 
-The [classes page](screenshots/classes.png) is the most simple page of them all - with three simple tables to look at the class timetable, simple descriptions of the classes and then the price options. It is important to have different price options as this may attract more students. Originally in the wireframes I had placed the coloumns side by side but felt it was more appealing one underneath the other as the text took a lot of room on the page. 
+
+
+#### ****
+
+The [classes page](screenshots/classes.png) is the most simple page of them all - with  
 
 #### **Contact**
 
-At the top of the page I placed the [form](screenshots/form-input.png) so that it would catch the attention of the users if they had any questions for the teacher. They then have to scroll down for the contact details and the [map](screenshots/map-contact.png) of the location. 
+At the bottom of the page I placed the [contact form](screenshots/) so that it would catch the attention of the users if they had any questions for the developer. They then have to enter their contact details. 
 
 [Back to top](#table-of-contents)
 

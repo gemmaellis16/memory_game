@@ -7,16 +7,20 @@
   }
   
   
-    
+    /* sourced from https://css-tricks.com/perfect-full-page-background-image/ website */
+
     html {
-      min-height: 100vh;
+      background-image: url("images/farm3.jpg")no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
     }
     
     body {
-      height: 100vh;
-      display: flex;
-      background: #020F59;
-      background-image: url("images/.png");
+      height: 100%;
+      
+
       
     }
     
@@ -24,25 +28,23 @@
       color: #FF6D00;
       font-weight: normal;
       text-align: center;
-      font-size: 6em;
+      font-size: 1rem;
     }
     
   
-    .grid-wrapper {
+    .card-container {
       display: grid;
-      grid-template-columns: repeat(4, 100px);
-      grid-gap: 1em;
+      grid-gap: 10px;
       justify-content: center;
-      perspective: 500px;
-      margin: 20px auto;
+      
+    }
+
+    #sm-grid {
+      max-width: 40%;
+      margin: auto;
+      
     }
     
-    .grid-item {
-      background-color: rgb(60, 177, 31);
-      height: 100px;
-      width: 100px;
-      border-radius: 10px;
-    }
     
   /* sourced from stackflow website */
 
@@ -53,7 +55,7 @@
     display: flex;
     flex-wrap: wrap;
     background-color: transparent;
-  
+
   }
   
   .card {
@@ -61,13 +63,14 @@
     height: calc(33.333% - 10px);
     margin: 5px;
     position: relative;
-    box-shadow: 1px 1px 1px rgba(0,0,0,.3);
     transition: transform 0.8s;
     transform-style: preserve-3d;
-    width:300px;height:300px;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
+    width: 100px;
+    height: 100px;
+  
   }
+
+
   
   .front-face,
   .back-face {
@@ -83,4 +86,41 @@
   
   .memory-card.flipped {
   transform:rotateY(180deg);
+  }
+
+  @media screen and (min-width: 200px) {
+    #grid {
+        max-width: 90%;
+        margin: auto;
+      }
+  }
+
+  @media screen and (min-width: 400px) {
+    #grid {
+        max-width: 70%;
+        margin: auto;
+      }
+  }
+
+  @media screen and (min-width: 767px) {
+    #grid {
+        max-width: 60%;
+        margin: auto;
+      }
+  }
+
+  @media screen and (max-width: 750px) {
+    .card {
+      width: 70px;
+      height: 70px;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    .card {
+    width: 70px;
+    height: 70px; 
+    margin: 10px;
+    }
+
   }
