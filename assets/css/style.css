@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Chicle&family=Londrina+Outline&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .body {
+    background-image: url(assets/images/farm.png);
+    height: 300px;
+    width: 300px;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+  
+  /* page layout */
+  .main-section {
+    display: inline-block;
+    
+  }
+
+  .left-section {
+    width: 40vh;
+  }
+
+  .right-section {
+    width: 150vh;
+  }
+
+    #game-grid {
+  display: block;
+  width: 50vw;
+  height: 50vh;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  width: 120px;
+  height: 120px
+
+    }
+
+    .flip-card {
+      background-color: transparent;
+      width: 150px;
+      height: 150px;
+      perspective: 1000px;
+      transform: rotateY(0deg);
+      transition: 0.3s;
+      margin: 10px;
+      display: inline-block;
+    }
+    
+    /* toggle this class on click */
+    .flip {
+      transform: rotateY(180deg);
+      transition: 0.3s;
+    }
+    /* toggle this class on click */
+    
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
+    
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
+    
+    .flip-card-front {
+      color: black;
+    }
+    
+    .flip-card-back {
+      color: white;
+      transform: rotateY(180deg);
+    }
+
+    .flip-card img {
+      height: 100%;
+      width: auto;
+    }
+    
+    .page-title {
+      color: green;
+      font-weight: bold;
+      text-align: center;
+      font-size: 2rem;
+    }
+    
+  
+    
+    
+    
+ 
+  
+
+  @media screen and (min-width: 200px) {
+    #grid {
+        max-width: 90%;
+        margin: auto;
+      }
+  }
+
+  @media screen and (min-width: 400px) {
+    #grid {
+        max-width: 70%;
+        margin: auto;
+      }
+  }
+
+  @media screen and (min-width: 767px) {
+    #grid {
+        max-width: 60%;
+        margin: auto;
+      }
+  }
+
+  @media screen and (max-width: 750px) {
+    .card {
+      width: 70px;
+      height: 70px;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    .card {
+    width: 70px;
+    height: 70px; 
+    margin: 10px;
+    }
+
+  }

@@ -4,7 +4,7 @@
 
 ## **Project Aim**
 
-Welcome to this memory game for children aged 2-5 years age. This simple game is easy to navigate, is eye catching and helps children improve their memory.  On this site I hope you will be able to easily find the information icon about the simple rules of the game and also able to access it on mobile, tablet and desktop.
+Welcome to this memory game for children aged 3-5 years age. This simple game is easy to navigate, is eye catching and helps children improve their memory.  On this site I hope you will be able to easily find the information icon about the simple rules of the game and also able to access it on mobile, tablet and desktop.
 
 
 ## **Table of Contents**
@@ -53,10 +53,15 @@ Welcome to this memory game for children aged 2-5 years age. This simple game is
 ### **User Goals**
 
 * The game should have information on how to play.
+
 * The game should be easy to use on mobile, tablet and desktop.
+
 * It should be visually appealing for children with the images and colours.
+
 * The game should have sounds that are appealing to children such as an applause when completed to give positive feedback, sounds when the cards are turned.
+
 * The sound button should be able to be turned on/off as they please.
+
 * It should have three different levels from easy through to difficult easy(8 cards), medium(12 cards), difficult(16 cards)  
 * It should have a name option so that they can see their score on th scoreboard.
 * It should have a stop and reshuffle button option for the child. 
@@ -121,10 +126,6 @@ Welcome to this memory game for children aged 2-5 years age. This simple game is
 
 
 [Back to top](#table-of-contents)
-
-
-#### * **Styling**
-Th cards have rounded corners as other memory cards that I have seen for children have corners like this - so it looks attractive for this age group. I also use all boxes like this because I think keeping the same rounded corner pattern throughout the page keeps consistency in design and maintains the feeling that all elements belong together.
 
 #### * **Cards**
 
@@ -313,7 +314,6 @@ The number of cards on the hard level (16) were chosen agian for the gradual ste
 
 #### ****
 
-The [classes page](screenshots/classes.png) is the most simple page of them all - with  
 
 #### **Contact**
 
@@ -324,8 +324,11 @@ At the bottom of the page I placed the [contact form](screenshots/) so that it w
 ### * **Features to be implemented**
 
 * When submitting the form, the information should be sent to Dr Chick's game account.
+
 * Chat bot that can assist the user.
+
 * Interactive scoreboard.
+
 * Include information on how their data will be used (GDPR-Law).
 
 
@@ -498,7 +501,6 @@ Cloning means creating a local copy of the remote repository. This allows you to
 ### **Aknowledgments** 
 
 * Tutors at Code Institute for their support.
-* My mentor for being so down to earth, with briliant advice and support on the project.
 
 
 [Back to top](#table-of-contents)
