@@ -84,8 +84,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 }
 ]
+deckOfCards.sort(() => 0.5 - Math.random())
 
 const gameGrid = document.querySelector('.game-grid')
+const scoreDisplay = document.querySelector('#score')
 const cardsChosen = []
 const cardsChosenId = []
 
@@ -135,13 +137,26 @@ function label(val) {
 
 //Shuffle
 
-//let cardArray = makeCardArray(cardData, level);
 
     
 
 
 //Function to check the cards
-
+Function checkForMatch() {
+  const cards = document.querySelectorAll('img')
+  const firstCardId = cardsChosenId[0]
+  const secondCardId = cardsChosenId[1]
+  if (cardsChosen[0] === cardsChosen[1])
+} else {
+  cards[firstCardId].setAttribute('src', assets/images/logo.png)
+  cards[secondCardId].setAttribute('src', assets/images/logo.png)
+}
+cardsChosen = []
+cardsChosenId = []
+scoreDisplay.textContent = cardsWon.length
+if (cardsWon.length === deckOfCards.length/2)
+scoreDisplay.textContent = 'You are a winner!' 
+}
 
 
 
