@@ -7,46 +7,40 @@
   }
 
   .body {
-    background-image: url(assets/images/farm.png);
-    height: 300px;
-    width: 300px;
-    background-repeat: no-repeat;
-    background-size: auto;
+    background: url(assets/images/farm4.jpg) repeat 0 0;
   }
   
   /* page layout */
   .main-section {
     display: inline-block;
-    
+    vertical-align: top;
   }
 
   .left-section {
-    width: 40vh;
+    width: 35vw;
   }
 
   .right-section {
-    width: 150vh;
+    width: 60vw;
   }
 
-    #game-grid {
-  display: block;
-  width: 50vw;
-  height: 50vh;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  width: 120px;
-  height: 120px
+  #top-left {
+    margin-bottom: 50px;
+  }
 
-    }
+  #game-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
 
     .flip-card {
       background-color: transparent;
-      width: 150px;
-      height: 150px;
+      width: 110px;
+      height: 110px;
       perspective: 1000px;
       transform: rotateY(0deg);
       transition: 0.3s;
-      margin: 10px;
+      margin: 5px;
       display: inline-block;
     }
     
@@ -90,10 +84,12 @@
     }
     
     .page-title {
+      font-family: Arial, Helvetica, sans-serif;
       color: green;
       font-weight: bold;
       text-align: center;
       font-size: 2rem;
+      margin: 20px auto;
     }
     
   

@@ -1,31 +1,48 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-})
+
 
 //Popovers with username /level of difficulty
-$(document).ready(function(){
-    $("#myBtn").click(function(){
-      $("#myModal").modal();
-    });
-  });
+
 //Start Game
 
 
 //Timer starts
+let minutesTag = document.getElementById("minutes");
+let secondsTag = document.getElementById("seconds");
+let totalSeconds = 0;
+setInterval(setTime, 1000);
+
+function setTime() {
+  ++ totalSeconds;
+  secondsTag.innerHTML = label(totalSeconds % 60);
+  minutesTag.innerHTML = label(totalSeconds / 60);
+}
+
+function label(val) {
+  let valTime = val + "";
+  if (valTime.length < 2) {
+    return "0" + valTime;
+  } else {
+    return valTime;
+  }
+}
+
 
 //Shuffle
 
-//Function to flip
-/* Select all Cards in the DOM */
-const cards = document.querySelectorAll('.flip-card .flip-card-inner');
+//let cardArray = makeCardArray(cardData, level);
 
-/*  For each card - when clicked - toggle the "flip"  css class  */
-cards.forEach(card => card.onclick = () => card.classList.toggle('flip'))
+    
+
+
 //Function to check the cards
 
-//If correct - its a match (audio "bing")
 
-//If incorrect - cards flip back over
+
+
+
+
 
 //Loop - correct/incorrect
 
@@ -39,10 +56,20 @@ cards.forEach(card => card.onclick = () => card.classList.toggle('flip'))
 
 //Information button
 
+
+
 //Reset button
+
+
+  //reset timer
+  let timer = document.querySelector(".timer");
+  timer.innerHTML = "0 mins 0 secs";
+  clearInterval(interval);
+}
 
 //Audio for cards
 
 //Button easy/med/hard
 
 
+})
