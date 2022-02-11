@@ -86,13 +86,25 @@ document.addEventListener('DOMContentLoaded', () => {
 ]
 
 const gameGrid = document.querySelector('.game-grid')
+const cardsChosen = []
+const cardsChosenId = []
 
 //game-grid
  for (let card of deckOfCards) {
    const nameRef = document.createElement("img");
-   gridRef.insertAdjacentHTML("beforehand", '${card.name}' )
+   gridRef.insertAdjacentHTML("beforeend", `${card.name}':${index}`)  
  }
 
+ //flip cards
+ function flipCard() {
+   const cardId = this.getAttribute('card.name')
+   cardsChosen.push(deckOfCards[cardId].name)
+   cardsChosenId.push(cardId)
+   this.setAttribute('src', deckOfCards[cardId].img)
+   if (cardsChosen.length === 2) [
+     setTimeout(checkForMatch, 500)
+   ]
+ }
 
 //Popovers with username /level of difficulty
 
