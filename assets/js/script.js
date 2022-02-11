@@ -110,6 +110,7 @@ const cardsChosenId = []
 
 //Popovers with username /level of difficulty
 
+
 //Start Game
 
 
@@ -135,11 +136,33 @@ function label(val) {
 }
 
 
-//Shuffle
+//Shuffle - sourced by https://www.better.dev/build-a-memory-matching-game-in-javascript
+//// Fisher-Yates (aka Knuth) Shuffle
+Function shuffle(cards) {
+const currentIndex = cards.length, temporaryValue, randomIndex;
 
+while (currentIndex) !== 0) {
+  randomIndex = Math.floor(Math.random() * currentIndex);
+  currentIndex -= 1;
+  temporaryValue = cards[currentIndex];
+  cards[currentIndex] = cards[randomIndex];
+  cards[randomIndex] = temporaryValue;
+}
+return cards;
+}    
+//deck of cards in the game
+const deck = document.querySelector('.deck');
 
-    
+function startGame() {
+  const shuffledCards = shuffle(cards);
 
+  for (let i= 0; i < shuffledCards.length; i++{
+    [].forEach.call(shuffledCards, function(item){
+      deck.appendChild(item);
+    }); 
+  }
+}
+window.onload = startGame();
 
 //Function to check the cards
 Function checkForMatch() {
@@ -171,6 +194,7 @@ scoreDisplay.textContent = 'You are a winner!'
 
 //Scoreboard
 
+
 //mute button
 
 //Information button
@@ -178,9 +202,32 @@ scoreDisplay.textContent = 'You are a winner!'
 
 
 //Reset button
+//re-shuffle deck
+startGame() {
+  cards = shuffle(cards);
+  for (let i = 0, i = < cards.length; i++) {
+    deck.innerHTML = "";
+    [].forEach.call(cards, function(item) {
+      deck.appendChild(item);
+    });
+    cards[i].classList.remove("show", "open", "match", "disabled");
 
+  }
+  //reset flips
+  flips = 0
+  counter.innerHTML = flips;
 
+  //reset star rating
+  for (let i = i < stars.length; i++) {
+    stars[i].style.color = "#FFD700";
+    stars[i].style.visibility = "visible";
+  }
   //reset timer
+  let timer = document.querySelector(".timer");
+  timer.innerHTML = "0 mins 0 secs";
+  clearInterval(interval);
+}
+
   
 
 //Audio for cards
