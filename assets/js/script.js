@@ -1,5 +1,6 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", function() {
 
+})
   //card options
 
   const deckOfCards = [
@@ -283,7 +284,43 @@ click() {
 
 }
 
-//Button easy/med/hard
+//Button easy/med/hard sourced from https://github.com/AJGreaves/picflip/blob/master/assets/js/game.js
+$('#easyButton').click(function() {
+  easyButton();
+  difficultyButton(easyHighScore);
+});
+
+$('#mediumButton').click(function() {
+  mediumButton();
+  difficultyButton(mediumHighScore);
+});
+
+$('#hardButton').click(function() {
+  hardButton();
+  difficultyButton(hardHighScore);
+});
+
+function easyButton() {
+  $('.my-card-column-medium, .my-card-column-hard').addClass('invisible').removeClass('visible');
+  $('#dashboard-high-score-text').text('Easy mode high score');
+}
+
+function mediumButton() {
+  $('.my-card-column-medium').addClass('visible').removeClass('invisible');
+  $('.my-card-column-hard').addClass('invisible').removeClass('visible');
+  $('#dashboard-high-score-text').text('Medium mode high score');
+}
+
+function hardButton() {
+  $('.my-card-column-medium').addClass('visible').removeClass('invisible');
+  $('.my-card-column-hard').addClass('visible').removeClass('invisible');
+  $('#dashboard-high-score-text').text('Hard mode high score');
+}
+
+function difficultyButton(score) {
+  activeHighScore = score;
+  displayScore(activeHighScore, dashStar);
+  resetGame();
+}
 
 
-})
