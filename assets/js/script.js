@@ -186,17 +186,32 @@ scoreDisplay.textContent = 'You are a winner!'
 
 
 
-//Loop - correct/incorrect
 
-//All matches - audio 
 
-//Popover - well done you're a winner or well done new high score
-
-//Scoreboard
+//Scoreboard sourced from https://stackoverflow.com/questions/40993396/add-a-score-counter-to-a-game-using-html-and-javascript/47168970
+const score=0;
+if (mult == x*y) 
+        {
+            Score=Score+1;
+    }
+    else 
+    {
+            Score=Score-1;
+    }
+  const scoreBoard = Document.getElementbyId('scoreBoard');
+    scoreBoard.innerHTML=Score;
 
 
 //mute button
-
+function muteButton() {
+  const audio = documenent.getElementById('audioPlayer');
+  if (audio.mute == false){
+    document.getElementById('audioPlayer').muted = true;
+  } else {
+    audio.mute = true
+    document.getElementById('audioPlayer').muted = false
+  }
+}
 //Information button
 
 
@@ -228,9 +243,18 @@ startGame() {
   clearInterval(interval);
 }
 
-  
+ //Loop - correct/incorrect
 
-//Audio for cards
+//All matches - audio 
+
+//Popover - well done you're a winner or well done new high score 
+
+//Audio for cards sourced from https://www.youtube.com/watch?v=3uuQ3g92oPQ
+class soundcontrol {
+  constructor() {
+    this bgsound = new Audio(assets/audio/)
+  }
+}
 
 //Button easy/med/hard
 
