@@ -7,82 +7,82 @@ document.addEventListener('DOMContentLoaded', () => {
       name: 'chicken',
       img: 'assets/images/chicken.png'
   
-  }
+  },
   {
     name: 'chicken',
     img: 'assets/images/chicken.png'
 
-}
+},
 {
   name: 'cow',
   img: 'assets/images/cow.png'
 
-}
+},
 {
   name: 'cow',
   img: 'assets/images/cow.png'
 
-}
+},
 {
   name: 'dog',
   img: 'assets/images/dog.png'
 
-}
+},
 {
   name: 'dog',
   img: 'assets/images/dog.png'
 
-}
+},
 {
   name: 'goat',
   img: 'assets/images/goat.png'
 
-}
+},
 {
   name: 'goat',
   img: 'assets/images/goat.png'
 
-}
+},
 {
   name: 'goose',
   img: 'assets/images/goose.png'
 
-}
+},
 {
   name: 'goose',
   img: 'assets/images/goose.png'
 
-}
+},
 {
   name: 'horse',
   img: 'assets/images/horse.png'
 
-}
+},
 {
   name: 'horse',
   img: 'assets/images/horse.png'
 
-}
+},
 {
   name: 'pig',
   img: 'assets/images/pig.png'
 
-}
+},
 {
   name: 'pig',
   img: 'assets/images/pig.png'
 
-}
+},
 {
   name: 'sheep',
   img: 'assets/images/sheep.png'
 
-}
+},
 {
   name: 'sheep',
   img: 'assets/images/sheep.png'
 
-}
+},
 ]
 deckOfCards.sort(() => 0.5 - Math.random())
 
@@ -138,10 +138,10 @@ function label(val) {
 
 //Shuffle - sourced by https://www.better.dev/build-a-memory-matching-game-in-javascript
 //// Fisher-Yates (aka Knuth) Shuffle
-Function shuffle(cards) {
+function shuffle(cards) {
 const currentIndex = cards.length, temporaryValue, randomIndex;
 
-while (currentIndex) !== 0) {
+while ((currentIndex) !== 0) {
   randomIndex = Math.floor(Math.random() * currentIndex);
   currentIndex -= 1;
   temporaryValue = cards[currentIndex];
@@ -156,7 +156,7 @@ const deck = document.querySelector('.deck');
 function startGame() {
   const shuffledCards = shuffle(cards);
 
-  for (let i= 0; i < shuffledCards.length; i++{
+  for (let i= 0; i < shuffledCards.length; i++) {
     [].forEach.call(shuffledCards, function(item){
       deck.appendChild(item);
     }); 
@@ -165,7 +165,7 @@ function startGame() {
 window.onload = startGame();
 
 //Function to check the cards
-Function checkForMatch() {
+function checkForMatch() {
   const cards = document.querySelectorAll('img')
   const firstCardId = cardsChosenId[0]
   const secondCardId = cardsChosenId[1]
@@ -220,7 +220,7 @@ function muteButton() {
 //re-shuffle deck
 startGame() {
   cards = shuffle(cards);
-  for (let i = 0, i = < cards.length; i++) {
+  for (let i = 0, i = < cards.length, i++ ) {
     deck.innerHTML = "";
     [].forEach.call(cards, function(item) {
       deck.appendChild(item);
@@ -252,8 +252,35 @@ startGame() {
 //Audio for cards sourced from https://www.youtube.com/watch?v=3uuQ3g92oPQ
 class soundcontrol {
   constructor() {
-    this bgsound = new Audio(assets/audio/)
+    this bgsound = new Audio('assets/audio/oldMcdonald.mp3');
+    this flipsound = new Audio('assets/audio/flip.wav');
+    this matchsound = new Audio('assets/audio/bing.wav');
+    this winnersound = new Audio('assets/audio/clapping.wav');
+    this clicksound = new Audio('assets/audio/click.wav');
+    this bgsound.volume = 0.5;
+    this bgsound.loop = true;
   }
+startMusic() {
+  this.bgsound.play();
+}
+stopMusic() {
+  this.bgsound.pause();
+  this.bgsound.currentTime = 0;
+}
+flip() {
+  this.flipsound.play();
+}
+match() {
+  this.matchsound.play();
+}
+winner() {
+  this.stopMusic();
+  this.winnersound.play();
+}
+click() {
+  this.clicksound.play();
+}
+
 }
 
 //Button easy/med/hard

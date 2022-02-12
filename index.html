@@ -52,20 +52,20 @@
         <!-- top left -->
         <div id="top-left">
             <div class="col-12 selection-button px-1 text-center">
-                <!-- Info modal pops up when clicked -->
-                <button type="button" class="btn btn-light circle-btn info-btn" data-toggle="modal"
+                
+                <button type="button" class="btn btn--big btn--blue" data-toggle="modal"
                     data-target="#infoModal" aria-label="Game info button">
                     <i class="fas fa-info" title="information button"></i>
                 </button>
-                <button type="button" class="dashboard-btn btn btn-light circle-btn reset-btn"
+                <button type="button" class="btn btn--big btn--green reset-btn"
                     aria-label="Game reset button">
                     <i class="fas fa-undo-alt" title="reset cards button" onclick="startGame()"></i>
                 </button>
-                <button type="button" id="muteButton" class="dashboard-btn btn btn-light circle-btn mute-btn"
+                <button type="button" id="muteButton" class="btn btn--big btn--orange mute-btn"
                     aria-label="Mute button">
                     <i class="fas fa-volume-mute" title="mute button"></i>
                 </button>
-                <button type="button" class="dashboard-btn btn btn-light circle-btn star-btn" aria-label="High score">
+                <button type="button" class="btn btn--big btn--red star-btn" aria-label="High score">
                     <i class="fas fa-star" title="star"></i>
                 </button>
             </div>
@@ -281,11 +281,175 @@
         </div>
     </div>
 
+<!-- USER MODAL -->
+<div class="modal fade" id="userInfoModal" tabindex="-1" role="dialog" aria-labelledby="userInfoModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 modal-background background-cover-center info-modal-background pb-2 mb-3">
+                            <div class="row justify-content-center">
+                                <div class="col-12 my-modal-title">
+                                    <h2>Name</h2>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <form class="userInfoModalForm">
+                                        <div class="form-group">
+                            
+                                            <input type="text" class="form-control form-control-lg" name="username" id="username" maxlength="20" aria-label="Type your name here" required>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 info-title">
+                                                <h2>Choose a picture</h2>
+                                            </div>
+                                        </div>
+                                        <div class="row box-white-curved-corners info-box py-1 my-2">
+                                            <label class="col-4 text-right selection-button my-2 p-0">
+                                                <input class="form-check-input" type="radio" name="avatarRadios" id="avatarRadios1" value="plant" aria-label="Cute plant illustration" required>
+                                                <img src="https://i.ibb.co/j3T7F2Y/plant.jpg" class="radio background-cover-center plant-cover" alt="Cute plant illustration">
+                                            </label>
+                                            <label class="col-4 text-center selection-button my-2 p-0">
+                                                <input class="form-check-input" type="radio" name="avatarRadios" id="avatarRadios2" value="car" aria-label="Yellow car illustration" required>
+                                                <img src="https://i.ibb.co/dfMH7zb/car.png" class="radio background-cover-center toycar-cover" alt="Yellow car illustration">
+                                            </label>
+                                            <label class="col-4 text-left selection-button my-2 p-0">
+                                                <input class="form-check-input" type="radio" name="avatarRadios" id="avatarRadios3" value="strawberry" aria-label="Strawberry illustration" required>
+                                                <img src="https://i.ibb.co/LZhQ7dG/strawberry.png" class="radio background-cover-center strawberry-cover" alt="Strawberry illustration">
+                                            </label>
+                                        </div>
+                                        <button id="user-info-submit-button" class="btn btn-light circle-btn tick-btn" aria-label="Submit Button"> 
+                                            <i class="fas fa-check"></i>
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- INFO MODAL sourced from-->
+<div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="infoModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <section class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 background-cover-center modal-background info-modal-background pb-2 mb-3">
+                            <div class="row justify-content-center">
+                                <div class="col-12 my-modal-title">
+                                    <h3>Rules of the game</h3>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-12 text-center p-0">
+                                    <div class="box-white-curved-corners info-box m-2 px-3 py-2">
+                                        <p class="info-modal-text">1. Flip two cards to find a matching pair.</p>
+                                        <p class="info-modal-text">2. You are a winner when all of the pairs have been matched.</p>
+                                        <p class="info-modal-text">3. The fewer flips you take and the less time you take the higher your score will be.</p>
+                                    </div>
+                                </div>
+                            </div>
+                                <div class="col-12 text-center p-0">
+                                    <button type="button" class="btn btn-light circle-btn tick-btn" data-dismiss="modal" aria-label="Close button"> 
+                                        <i class="fas fa-check"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- WIN MODAL -->
+<div class="modal fade" id="winModal" tabindex="-1" role="dialog" aria-labelledby="winModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <section class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 modal-background background-cover-center win-modal-background pb-2 mb-3">
+                            <div class="row justify-content-center">
+                                <div class="col-12 my-modal-title">
+                                    <h2>Woohoo!!</h2>
+                                    <h3>You win!</h3>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <div id="starsWinModal" class="stars win-stars" title="Score out of 5 stars">
+                                        <i class="score-star star fas fa-star empty-star" title="no star"></i>
+                                        <i class="score-star star fas fa-star empty-star" title="no star"></i>
+                                        <i class="score-star star fas fa-star empty-star" title="no star"></i>
+                                        <i class="score-star star fas fa-star empty-star" title="no star"></i>
+                                        <i class="score-star star fas fa-star empty-star" title="no star"></i>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center p-0">
+                                    <button id="win-modal-close-btn" type="button" class="btn btn-light circle-btn tick-btn" aria-label="Close button"> 
+                                        <i class="fas fa-check"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- HIGH SCORE MODAL -->
+<div class="modal fade" id="newHighScoreModal" tabindex="-1" role="dialog" aria-labelledby="newHighScoreModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <section class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 modal-background background-cover-center win-modal-background pb-2 mb-3">
+                            <div class="row justify-content-center">
+                                <div class="col-12 my-modal-title">
+                                    <h2>New high score!!</h2>
+                                </div>
+
+                                <div class="col-12 text-center p-0">
+                                    <figure class="trophy mx-auto" title="trophy"></figure>
+                                </div>
+
+                                <div class="col-12 text-center p-0">
+                                    <div id="starsHighScoreModal" class="stars win-stars" title="score out of 5 stars">
+                                        <i class="win-modal-score-star star fas fa-star empty-star" title="no star"></i>
+                                        <i class="win-modal-score-star star fas fa-star empty-star" title="no star"></i>
+                                        <i class="win-modal-score-star star fas fa-star empty-star" title="no star"></i>
+                                        <i class="win-modal-score-star star fas fa-star empty-star" title="no star"></i>
+                                        <i class="win-modal-score-star star fas fa-star empty-star" title="no star"></i>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center p-0">
+                                    <button id="high-score-modal-close-btn" type="button" class="btn btn-light circle-btn tick-btn" data-dismiss="modal" aria-label="Close button"> 
+                                        <i class="fas fa-check" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+
+
     <!-- AUDIO FILES -->
-    <audio id="buttonClickAudio" src="assets/audio/button.wav"></audio>
-    <audio id="applauseAudio" src="assets/audio/applause.wav"></audio>
-    <audio id="cardFlipAudio" src="assets/audio/card-flip.wav"></audio>
-    <audio id="correctBingAudio" src="assets/audio/correct.wav"></audio>
+    <audio id="buttonClickAudio" src="assets/audio/click.wav"></audio>
+    <audio id="clappingAudio" src="assets/audio/clapping.wav"></audio>
+    <audio id="flipAudio" src="assets/audio/flip.wav"></audio>
+    <audio id="correctBingAudio" src="assets/audio/bing.wav"></audio>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
