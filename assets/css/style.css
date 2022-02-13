@@ -21,7 +21,7 @@
     color: #29c20b; }
   
   h3 {
-    font-family: "Bubblegum Sans", cursive;
+    font-family: "Bubblegum Sans", "cursive";
     font-size: 40px;
     font-weight: 100;
     text-align: center;
@@ -55,6 +55,15 @@
     margin-bottom: 100px;
     
   }
+
+  .btn--med {
+    width: 220px;
+    height: 60px;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: white;
+}
 
   .btn {
     width: 220px;
@@ -188,67 +197,127 @@
       font-size: 2rem;
       margin: 20px auto;
     }
-    
-  
-    
-    
-    
- 
-  
 
-  @media screen and (min-width: 200px) {
-    #grid {
-        max-width: 90%;
-        margin: auto;
-      }
-      
-  }
-
-  @media screen and (min-width: 400px) {
-    #grid {
-        max-width: 70%;
-        margin: auto;
-      }
-
-
-  }
-
-  @media screen and (min-width: 767px) {
-    #grid {
-        max-width: 60%;
-        margin: auto;
-      }
-  }
-
-  @media screen and (max-width: 750px) {
-    .card {
-      width: 70px;
-      height: 70px;
+    .popoverStart {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      justify-content: center;
+      align-items: center;
+      z-index: 100;
+      color: greenyellow;
+      font-family: "Bubblegum Sans", "cursive";
     }
-  }
 
-  @media screen and (max-width: 992px) {
-    .card {
-    width: 70px;
-    height: 70px; 
-    margin: 10px;
+    .popover-text-small {
+      font-size: .2em;
     }
     
-    .btn--big {
-      margin: 0 10px;
-      padding: 5px;
-      border: 5px solid;
-      width: 50px;
-      height: 50px;
+    .popoverStart.visible {
+      display: flex;
+      flex-direction: column;
+      animation: overlay-grow 500ms forwards;
+    }
+
+    @keyframes popover-grow {
+      from {
+        background-color: rgba(0, 0, 0, 0); 
+        font-size: 0;
+      }
+      to {
+        font-size: 10em;
+        background-color: rgba(0, 0, 0, 0.8);
+        background-image: url(assets/images/farm4.jpg);
+      }
+    }
+  
+    /* The Modal (background) sourced from https://www.w3schools.com/howto/howto_css_modals.asp*/
+.infoModal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+
+}
+
+/* Modal Content/Box */
+.info-box {
+  background-color: #fefefe;
+  float: center;
+  padding: 30px;
+  border: 1px solid green;
+  width: 
+}
+
+/* The Close Button */
+.tick-btn {
+  color: red;
+  float: center;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+    
+    
+
+@media screen and (max-width: 850px) {     
+  #game-grid {     
+
+    grid-template-columns: repeat(3, auto);
+    max-width: 220px;
+    margin: auto;
+    margin-left: 15px;
+    font-size: 30px;
+  }
+
+
+  .main-section{
+    display: block;
+  }
+
+  .flip-card {
+    height: 100px;
+    width: 100px;
+  }
+
+   .btn--big {
+     margin-left: 70px;
+      margin-top: 20px;
+      width: 60px;
+      height: 60px;
       font-size: 1.5rem;
+      border-radius: 30%;
+      display: flex;
   }
-  .game-grid {
-      margin: 0 5px;
-      margin-top: 150px;
-      padding: 5px;
-      border: 5px;
-      width: 50px;
-      height: 50px;
-      font-size: 0.5rem;
+
+
+  .btn--med {
+    margin: auto;
+    margin-left: 70px;
   }
+
+  h1, h2 {
+    font-size: 60px;
+    margin-left: 10px;
+    
   }
+  
+  h3 {
+    font-size: 30px;
+    text-align: left;
+    margin-left: 30px;
+}
+  
+
+  

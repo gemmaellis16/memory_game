@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
 
-})
+
   //card options
 
   const deckOfCards = [
@@ -88,9 +88,9 @@ document.addEventListener("DOMContentLoaded", function() {
 deckOfCards.sort(() => 0.5 - Math.random())
 
 const gameGrid = document.querySelector('.game-grid')
-const scoreDisplay = document.querySelector('#score')
-const cardsChosen = []
-const cardsChosenId = []
+const scoreDisplay = document.querySelector('.score')
+const cardsChosen = document.querySelector('cardsChosen')
+const cardsChosenId = document.querySelector('.cardsChosenId')
 
 //game-grid
  for (let card of deckOfCards) {
@@ -112,7 +112,15 @@ const cardsChosenId = []
 //Popovers with username /level of difficulty
 
 
+
+
 //Start Game
+function ready() {
+  let popovers = Array.from(document.getElementsByClassName(popover-text));
+  let cards = Array.from(document.getElementsByClassName(card));
+
+  popovers.forEach(popover) 
+}
 
 
 //Timer starts
@@ -190,6 +198,8 @@ scoreDisplay.textContent = 'You are a winner!'
 
 
 //Scoreboard sourced from https://stackoverflow.com/questions/40993396/add-a-score-counter-to-a-game-using-html-and-javascript/47168970
+const scoreBoard = document.getElementbyId('scoreBoard');
+    scoreBoard.innerHTML=Score;
 const score=0;
 if (mult == x*y) 
         {
@@ -199,8 +209,8 @@ if (mult == x*y)
     {
             Score=Score-1;
     }
-  const scoreBoard = Document.getElementbyId('scoreBoard');
-    scoreBoard.innerHTML=Score;
+  
+
 
 
 //mute button
@@ -214,7 +224,31 @@ function muteButton() {
   }
 }
 //Information button
+// Get the modal
+const modal = document.getElementById("infoModal");
 
+// Get the button that opens the modal
+const btn = document.getElementById("infoModal");
+
+// Get the <span> element that closes the modal
+const span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == infoModal) {
+    modal.style.display = "none";
+  }
+}
 
 
 //Reset button
@@ -323,4 +357,4 @@ function difficultyButton(score) {
   resetGame();
 }
 
-
+})
