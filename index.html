@@ -31,18 +31,6 @@
         <h1>Farmyard Flip</h1>
     </div>
 
-<!-- USER/START MODAL -->
-    <div class="popoverStart">
-        Click to Start
-    </div>
-    <div id= "game-over" class="popoverStart">
-        Game Over
-        <span class="popover-text-small">Click to restart</span>
-    </div>
-    <div id= "winner-text" class="popoverStart">
-        You're a winner!
-        <span class="popover-text-small">Click to restart</span>
-    </div>
     <!-- MAIN SECTION -->
     <!-- left section -->
     <div class="main-section left-section">
@@ -65,19 +53,19 @@
         <div id="top-left">
             <div class="col-12 selection-button px-1 text-center">
                 
-                <button type="button" class="btn btn--big btn--blue" data-toggle="modal"
+                <button type="button" class="btn btn--big btn--red" data-toggle="modal"
                     data-target="#infoModal" aria-label="Game info button">
                     <i class="fas fa-info" title="information button"></i>
                 </button>
-                <button type="button" class="btn btn--big btn--green reset-btn"
+                <button type="button" class="btn btn--big btn--orange reset-btn"
                     aria-label="Game reset button">
                     <i class="fas fa-undo-alt" title="reset cards button"></i>
                 </button>
-                <button type="button" id="muteButton" class="btn btn--big btn--orange mute-btn"
+                <button type="button" id="muteButton" class="btn btn--big btn--blue mute-btn"
                     aria-label="Mute button">
                     <i class="fas fa-volume-mute" title="mute button"></i>
                 </button>
-                <button type="button" class="btn btn--big btn--red star-btn" aria-label="High score">
+                <button type="button" class="btn btn--big btn--green star-btn" aria-label="High score">
                     <i class="fas fa-star" title="star"></i>
                 </button>
             </div>
@@ -415,7 +403,17 @@
     <audio id="clappingAudio" src="assets/audio/clapping.wav"></audio>
     <audio id="flipAudio" src="assets/audio/flip.wav"></audio>
     <audio id="correctBingAudio" src="assets/audio/bing.wav"></audio>
+    <footer class="text-uppercase">
 
+        <span>Find us on:</span>
+    
+        <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Find us on Facebook">Facebook</a>
+        <a href="https://www.twitter.com" target="_blank" rel="noopener" aria-label="Find us on Twitter">Twitter</a>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Find us on Instagram">Instagram</a>
+        
+        <p> For Educational purposes</p>
+    <!-- /Footer -->
+        </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>

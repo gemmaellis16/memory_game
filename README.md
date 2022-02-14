@@ -64,7 +64,7 @@ Welcome to this memory game for children aged 3-5 years age. This simple game is
 
 * It should have three different levels from easy through to difficult easy(8 cards), medium(12 cards), difficult(16 cards)  
 * It should have a name option so that they can see their score on th scoreboard.
-* It should have a stop and reshuffle button option for the child. 
+* It should have a reset button for the child. 
 * It should have a timer so that that their time is recorded 
 
 ### **Owner Goals**
@@ -275,7 +275,7 @@ For the [grid](screenshots/navigation.png) I have used Boostrap.
 
 #### **Image**
 
-The background [image](assets/css/images/yoga-main.jpg) is of a farm landscape to bring the farm landscape to the attention of the child.
+The background [image](assets/css/images/farm.jpg) is of a farm landscape to bring the farm landscape to the attention of the child.
 
 #### **Pop up Modal**
 
@@ -292,8 +292,8 @@ The [buttons](screenshots/) icons were used as they are widely known symbols so 
 - "Mute" button to turn the sound on/off as the user wishes.
 - "Reset" button to start the game over.
 - "Star" symbol for the scoreboard.
-- "Time" symbol to keep the time of completed game.
-- "Number" symbol to keep record of how many times cards were flipped over.
+- "Time" written in text to keep the time of completed game.
+- "Flips" written in text to keep record of how many times cards were flipped over.
 
 #### **Cards**
 

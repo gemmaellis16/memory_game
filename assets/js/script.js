@@ -8,88 +8,8 @@ document.addEventListener("DOMContentLoaded", function() {
 })
   //card options
 
-  const deckOfCards = [
-    {
-      name: 'chicken',
-      img: 'assets/images/chicken.png'
-  
-  },
-  {
-    name: 'chicken',
-    img: 'assets/images/chicken.png'
-
-},
-{
-  name: 'cow',
-  img: 'assets/images/cow.png'
-
-},
-{
-  name: 'cow',
-  img: 'assets/images/cow.png'
-
-},
-{
-  name: 'dog',
-  img: 'assets/images/dog.png'
-
-},
-{
-  name: 'dog',
-  img: 'assets/images/dog.png'
-
-},
-{
-  name: 'goat',
-  img: 'assets/images/goat.png'
-
-},
-{
-  name: 'goat',
-  img: 'assets/images/goat.png'
-
-},
-{
-  name: 'goose',
-  img: 'assets/images/goose.png'
-
-},
-{
-  name: 'goose',
-  img: 'assets/images/goose.png'
-
-},
-{
-  name: 'horse',
-  img: 'assets/images/horse.png'
-
-},
-{
-  name: 'horse',
-  img: 'assets/images/horse.png'
-
-},
-{
-  name: 'pig',
-  img: 'assets/images/pig.png'
-
-},
-{
-  name: 'pig',
-  img: 'assets/images/pig.png'
-
-},
-{
-  name: 'sheep',
-  img: 'assets/images/sheep.png'
-
-},
-{
-  name: 'sheep',
-  img: 'assets/images/sheep.png'
-
-},
-]
+  let deckOfCards = [chicken, cow, dog, goat, goose, horse, pig, sheep]
+    
 deckOfCards.sort(() => 0.5 - Math.random())
 
 const gameGrid = document.querySelector("game-grid")
@@ -154,7 +74,7 @@ if (document.readyState == 'loading') {
 }
 
 function ready() {
-  let overlay = Array.from(document.getElementsByClassName("popover-text"));
+  let startModal = Array.from(document.getElementsByClassName("popover-text"));
   let cards = Array.from(document.getElementsByClassName("flip-card"));
   let game = new FarmyardFlip(100 cards);
 

@@ -11,7 +11,7 @@
     background-image: url('../images/farm4.jpg');
     background-position: right, left top;
     background-repeat: no-repeat, repeat;
-    padding: 15px;
+    padding: 0;
     background-size: cover;
   
   }
@@ -23,7 +23,7 @@
     font-weight: 100;
     text-align: center;
     text-shadow: 0 5px 5px rgba(0, 0, 0, 1);
-    color: #29c20b; 
+    color: red; 
     letter-spacing: 0.2rem;
   }
   
@@ -32,7 +32,7 @@
     font-size: 30px;
     font-weight: 100;
     text-align: left;
-    color: #29c20b; 
+    color: red; 
     text-shadow: 0 3px 3px rgba(0, 0, 0, 1);
   }
   
@@ -86,7 +86,7 @@
 .btn--blue {
     border-color: blue;
     color: blue;
-    margin-top: 80px;
+    margin-top: 20px;
 }
 
 .btn--blue:active,
@@ -98,7 +98,7 @@
 .btn--orange {
     border-color: orange;
     color: orange;
-    margin-top: 20px;
+    margin-top: 80px;
 }
 
 .btn--orange:active,
@@ -110,7 +110,7 @@
 .btn--red {
     border-color: red;
     color: red;
-    margin-top: 20px;
+    margin-top: 80px;
 }
 
 .btn--red:active,
@@ -122,7 +122,7 @@
 .btn--green {
     border-color: green;
     color: green;
-    margin-top: 80px;
+    margin-top: 20px;
 }
 
 .btn--green:active,
@@ -194,43 +194,6 @@
       font-size: 2rem;
       margin: 20px auto;
     }
-
-     /* Modals */
-
-    .popoverStart {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      justify-content: center;
-      align-items: center;
-      z-index: 100;
-      color: greenyellow;
-      font-family: "Bubblegum Sans", "cursive";
-    }
-
-    .popover-text-small {
-      font-size: .3em;
-    }
-    
-    .popoverStart.visible {
-      display: flex;
-      flex-direction: column;
-      animation: overlay-grow 500ms forwards;
-    }
-
-    @keyframes overlay-grow {
-      from {
-        background-color: rgba(0, 0, 0, 0); 
-        font-size: 0;
-      }
-      to {
-        font-size: 10em;
-        background-color: rgba(0, 0, 0, 0.8);
-      }
-    }
   
     /*  Modal sourced from https://www.w3schools.com/howto/howto_css_modals.asp*/
 
@@ -256,7 +219,41 @@
   cursor: pointer;
 }
     
-    
+.startModal {
+
+} 
+
+.modal.content{
+  background-color: #fefefe;
+  float: center;
+  padding: 30px;
+  border: 1px solid rgb(37, 163, 37);
+}
+
+/* footer sourced from whiskey project*/
+footer {
+	  background-color: rgb(44, 216, 10);
+    height: 50px;
+    color: white;
+    text-align: center;
+}
+
+footer > span {
+	color: white
+}
+
+footer > a {
+	color: white;
+	text-decoration: none;
+	padding: 0 0px;
+	font-size: 1rem;
+}
+
+footer > p {
+	color: white;
+}
+
+
 
 @media screen and (max-width: 850px) {     
   #game-grid {     
