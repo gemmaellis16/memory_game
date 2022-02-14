@@ -6,12 +6,23 @@
     box-sizing: border-box;
   }
 
+  body {
+    margin: 0;
+    background-image: url('../images/farm4.jpg');
+    background-position: right, left top;
+    background-repeat: no-repeat, repeat;
+    padding: 15px;
+    background-size: cover;
+  
+  }
+  
+
   h1, h2 {
     font-family: "Bubblegum Sans", cursive;
     font-size: 90px;
     font-weight: 100;
     text-align: center;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 5px 5px rgba(0, 0, 0, 1);
     color: #29c20b; 
     letter-spacing: 0.2rem;
   }
@@ -22,6 +33,7 @@
     font-weight: 100;
     text-align: left;
     color: #29c20b; 
+    text-shadow: 0 3px 3px rgba(0, 0, 0, 1);
   }
   
 
@@ -55,6 +67,7 @@
     text-transform: uppercase;
     letter-spacing: 1.2px;
     color: white;
+    border-color: black;
 }
 
 .btn--big {
@@ -132,6 +145,7 @@
       transition: 0.3s;
       margin: 5px;
       display: inline-block;
+      border-color: black;
     }
     
     .flip {
