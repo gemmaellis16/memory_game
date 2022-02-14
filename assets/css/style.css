@@ -6,66 +6,49 @@
     box-sizing: border-box;
   }
 
-  .body {
-    
-
-  }
-  
   h1, h2 {
     font-family: "Bubblegum Sans", cursive;
-    font-size: 60px;
+    font-size: 90px;
     font-weight: 100;
-    margin-left: 120px;
     text-align: center;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
-    color: #29c20b; }
+    color: #29c20b; 
+    letter-spacing: 0.2rem;
+  }
   
   h3 {
     font-family: "Bubblegum Sans", "cursive";
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 100;
-    text-align: center;
-    color: #29c20b; }
+    text-align: left;
+    color: #29c20b; 
+  }
   
+
   /* page layout */
   .main-section {
     display: inline-block;
     vertical-align: top;
-    
-    
-    
+  
   }
   
-
   .left-section {
     width: 35vw;
-    margin-bottom: 100px;
-   
-
-    
+    margin-bottom: 100px; 
+    margin-top: 60px;
   }
 
   .right-section {
-    width: 60vw;
-    
-    
+    width: 60vw; 
   }
 
   #top-left {
     margin-bottom: 100px;
+    margin-top: -30px;
     
   }
-
+  
   .btn--med {
-    width: 220px;
-    height: 60px;
-    font-family: "Raleway", sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 1.2px;
-    color: white;
-}
-
-  .btn {
     width: 220px;
     height: 60px;
     font-family: "Raleway", sans-serif;
@@ -76,6 +59,7 @@
 
 .btn--big {
   padding-top: 5px;
+  padding-bottom: 5px;
   border-radius: 50%;
   background-color: white;
   border: 10px solid;
@@ -101,7 +85,7 @@
 .btn--orange {
     border-color: orange;
     color: orange;
-    margin-top: 80px;
+    margin-top: 20px;
 }
 
 .btn--orange:active,
@@ -113,7 +97,7 @@
 .btn--red {
     border-color: red;
     color: red;
-    margin-top: 80px;
+    margin-top: 20px;
 }
 
 .btn--red:active,
@@ -150,12 +134,11 @@
       display: inline-block;
     }
     
-    /* toggle this class on click */
     .flip {
       transform: rotateY(180deg);
       transition: 0.3s;
     }
-    /* toggle this class on click */
+   
     
     .flip-card-inner {
       position: relative;
@@ -198,6 +181,8 @@
       margin: 20px auto;
     }
 
+     /* Modals */
+
     .popoverStart {
       display: none;
       position: fixed;
@@ -213,7 +198,7 @@
     }
 
     .popover-text-small {
-      font-size: .2em;
+      font-size: .3em;
     }
     
     .popoverStart.visible {
@@ -222,7 +207,7 @@
       animation: overlay-grow 500ms forwards;
     }
 
-    @keyframes popover-grow {
+    @keyframes overlay-grow {
       from {
         background-color: rgba(0, 0, 0, 0); 
         font-size: 0;
@@ -230,30 +215,18 @@
       to {
         font-size: 10em;
         background-color: rgba(0, 0, 0, 0.8);
-        background-image: url(assets/images/farm4.jpg);
       }
     }
   
-    /* The Modal (background) sourced from https://www.w3schools.com/howto/howto_css_modals.asp*/
-.infoModal {
-  display: none; 
-  position: fixed; 
-  z-index: 1; 
-  left: 0;
-  top: 0;
-  width: 100%; 
-  height: 100%; 
-  overflow: auto; 
-
-}
+    /*  Modal sourced from https://www.w3schools.com/howto/howto_css_modals.asp*/
 
 /* Modal Content/Box */
 .info-box {
   background-color: #fefefe;
   float: center;
   padding: 30px;
-  border: 1px solid green;
-  width: 
+  border: 1px solid rgb(37, 163, 37);
+ 
 }
 
 /* The Close Button */
@@ -292,15 +265,17 @@
   }
 
    .btn--big {
-     margin-left: 70px;
-      margin-top: 20px;
+      margin-left: 30px;
+      margin-top: 50px;
       width: 60px;
       height: 60px;
       font-size: 1.5rem;
       border-radius: 30%;
-      display: flex;
   }
 
+  #top-left {
+    width: 100vw;
+  }
 
   .btn--med {
     margin: auto;
@@ -314,10 +289,12 @@
   }
   
   h3 {
-    font-size: 30px;
+    font-size: 25px;
     text-align: left;
     margin-left: 30px;
 }
   
-
+.label {
+  width: 100vw;
+}
   

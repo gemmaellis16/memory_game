@@ -1,6 +1,11 @@
 document.addEventListener("DOMContentLoaded", function() {
-
-
+  let buttons = document.getElementsByTagName("button");
+  for (let button of buttons) {
+    button.addEventListener("click, function"() {
+      
+    })
+  }
+})
   //card options
 
   const deckOfCards = [
@@ -110,16 +115,60 @@ const cardsChosenId = document.querySelector('.cardsChosenId')
  }
 
 //Popovers with username /level of difficulty
+/*Clicking level buttons*/
+
+$(".btn-level").click(function () {
+  $(".menu-page").removeClass("d-block");
+  $(".menu-page").addClass("d-none");
+  $(".game-window").removeClass("d-none");
+  $(".game-window").addClass("d-block");
+  $("#playWindow").modal("hide");
+  amount = $(this).attr("data-difficulty");
+  showCards(amount);
+  amountFlips = 0;
+  openedCardCount = 0;
+  steps.innerHTML = " Steps: " + amountFlips;
+  level.innerHTML = " Level: " + $(this).text();
+});
+
+$(".btn-restart").click(function () {
+  clearTimeout(wrongGuessTimeout);
+  clearTimeout(timerTimeout);
+  $(".menu-page").removeClass("d-none");
+  $(".menu-page").addClass("d-block");
+  $(".game-window").removeClass("d-block");
+  $(".game-window").addClass("d-none");
+  $("#gameEnd").modal("hide");
+  $("#playWindow").modal("show");
+  timer.innerHTML = "Time: 00:00";
+  stopTimer();
+});
 
 
 
+//Start Game sourced by https://www.youtube.com/watch?v=28VfzEiJgy4&t=0s
+if (document.readyState == 'loading') {
+  document.addEventListener('DOMContentLoaded', ready);
+} else {
+  ready();
+}
 
-//Start Game
 function ready() {
-  let popovers = Array.from(document.getElementsByClassName(popover-text));
+  let overlay = Array.from(document.getElementsByClassName(popover-text));
   let cards = Array.from(document.getElementsByClassName(card));
+  let game = new FarmyardFlip(100 cards);
 
-  popovers.forEach(popover) 
+  overlay.forEach(overlay => {
+    overlay.addEventListener('click', () => {
+     overlay.classList.remove('visible');
+     game.startGame();
+    });
+  });
+  cards forEach(card => {
+    card.addEventListener('click', () {
+      game.flipCard(card);
+    });
+  }); 
 }
 
 
@@ -227,23 +276,16 @@ function muteButton() {
 // Get the modal
 const modal = document.getElementById("infoModal");
 
-// Get the button that opens the modal
 const btn = document.getElementById("infoModal");
 
-// Get the <span> element that closes the modal
 const span = document.getElementsByClassName("close")[0];
 
-// When the user clicks on the button, open the modal
 btn.onclick = function() {
   modal.style.display = "block";
 }
-
-// When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
 }
-
-// When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == infoModal) {
     modal.style.display = "none";
@@ -357,4 +399,4 @@ function difficultyButton(score) {
   resetGame();
 }
 
-})
+
