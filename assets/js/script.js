@@ -74,7 +74,7 @@ if (document.readyState == 'loading') {
 }
 
 function ready() {
-  let startModal = Array.from(document.getElementsByClassName("popover-text"));
+  let startModal = Array.from(document.getElementsByClassName("startModal"));
   let cards = Array.from(document.getElementsByClassName("flip-card"));
   let game = new FarmyardFlip(100 cards);
 
@@ -143,7 +143,7 @@ window.onload = startGame();
 
 //Function to check the cards
 function checkForMatch() {
-  const cards = document.querySelectorAll('img')
+  const cards = document.querySelectorAll('flip-cards')
   const firstCardId = cardsChosenId[0]
   const secondCardId = cardsChosenId[1]
   if (cardsChosen[0] === cardsChosen[1])

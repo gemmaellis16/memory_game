@@ -18,7 +18,7 @@
   
 
   h1, h2 {
-    font-family: "Bubblegum Sans", cursive;
+    font-family: "Bubblegum Sans", "cursive";
     font-size: 90px;
     font-weight: 100;
     text-align: center;
@@ -220,10 +220,15 @@
 }
     
 .startModal {
-
+  background-color: #fefefe;
+  float: center;
+  padding: 30px;
+  border: 1px solid rgb(37, 163, 37);
+  font-family: "Bubblegum Sans", "cursive";
+  color: red;
 } 
 
-.modal.content{
+.modal.content {
   background-color: #fefefe;
   float: center;
   padding: 30px;

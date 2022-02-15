@@ -37,8 +37,8 @@
         <!-- top left  -->
         <div>
             <!-- Levels section -->
-            <div class="row box-red-curved-corners mx-auto">
-                <div class="col-12 selection-button px-1 text-center">
+            <div class="row mx-auto">
+                <div class="col-12 selection-button text-center">
                     <button id="easyButton" type="button" class="btn--med btn-success"
                         aria-label="Easy Mode Button">Easy</button>
                     <button id="mediumButton" type="button" class="btn--med btn-warning"
@@ -78,14 +78,14 @@
         <!-- TIMER FLIPS SCORE -->
         <div class="row label">
             <div class="col-4 label">
-                <h3>Timer:<label id="minutes">0</label>:<label id="seconds">00</label>
+                <h3>Timer: <label id="minutes">0</label>:<label id="seconds">00</label>
                 </h3>
             </div>
             <div class="col-4 label">
-                <h3>Flips:0</h3>
+                <h3>Flips: 0</h3>
             </div>
             <div class="col-4 label">
-                <h3>Score:0</h3>
+                <h3>Score: 0</h3>
             </div>
             <div class="col-4" id="timer"></div>
             <div class="col-4" id="flips"></div>
@@ -285,29 +285,29 @@
 
 
 
-<!-- INFO MODAL sourced from-->
+<!-- INFO MODAL sourced from -->
 <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="infoModal" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-body">
                 <section class="container-fluid">
                     <div class="row">
-                        <div class="col-12 background-cover-center modal-background info-modal-background pb-2 mb-3">
+                        <div class="col-12 background-cover-center modal-background info-modal-background">
                             <div class="row justify-content-center">
                                 <div class="col-12 my-modal-title">
                                     <h3>Rules of the game</h3>
                                 </div>
                             </div>
                             <div class="row justify-content-center">
-                                <div class="col-12 text-center p-0">
-                                    <div class="box-white-curved-corners info-box m-2 px-3 py-2">
+                                <div class="col-12 text-center">
+                                    <div class="info-box">
                                         <p class="info-modal-text">1. Flip two cards to find a matching pair.</p>
                                         <p class="info-modal-text">2. You are a winner when all of the pairs have been matched.</p>
                                         <p class="info-modal-text">3. The fewer flips you take and the less time you take the higher your score will be.</p>
                                     </div>
                                 </div>
                             </div>
-                                <div class="col-12 text-center p-0">
+                                <div class="col-12 text-center">
                                     <button type="button" class="btn btn-light circle-btn tick-btn" data-dismiss="modal" aria-label="Close button"> 
                                         <i class="fas fa-check"></i>
                                     </button>
@@ -322,16 +322,16 @@
 </div>
 
 <!-- WIN MODAL -->
-<div class="modal fade" id="winModal" tabindex="-1" role="dialog" aria-labelledby="winModal" aria-hidden="true">
+<div class="modal-display invisible" id="winnerModal" tabindex="-1" role="dialog" aria-labelledby="winnerModal" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-body">
                 <section class="container-fluid">
                     <div class="row">
-                        <div class="col-12 modal-background background-cover-center win-modal-background pb-2 mb-3">
+                        <div class="col-12 background-cover-center">
                             <div class="row justify-content-center">
-                                <div class="col-12 my-modal-title">
-                                    <h2>Woohoo!!</h2>
+                                <div class="col-12 my-modal-title-center">
+                                    <h2>Yeah!!</h2>
                                     <h3>You win!</h3>
                                 </div>
                                 <div class="col-12 text-center">
@@ -343,7 +343,7 @@
                                         <i class="score-star star fas fa-star empty-star" title="no star"></i>
                                     </div>
                                 </div>
-                                <div class="col-12 text-center p-0">
+                                <div class="col-12 text-center">
                                     <button id="win-modal-close-btn" type="button" class="btn btn-light circle-btn tick-btn" aria-label="Close button"> 
                                         <i class="fas fa-check"></i>
                                     </button>
@@ -364,17 +364,13 @@
             <div class="modal-body">
                 <section class="container-fluid">
                     <div class="row">
-                        <div class="col-12 modal-background background-cover-center win-modal-background pb-2 mb-3">
+                        <div class="col-12 modal-background">
                             <div class="row justify-content-center">
                                 <div class="col-12 my-modal-title">
                                     <h2>New high score!!</h2>
                                 </div>
 
-                                <div class="col-12 text-center p-0">
-                                    <figure class="trophy mx-auto" title="trophy"></figure>
-                                </div>
-
-                                <div class="col-12 text-center p-0">
+                                <div class="col-12 text-center">
                                     <div id="starsHighScoreModal" class="stars win-stars" title="score out of 5 stars">
                                         <i class="win-modal-score-star star fas fa-star empty-star" title="no star"></i>
                                         <i class="win-modal-score-star star fas fa-star empty-star" title="no star"></i>
@@ -383,7 +379,7 @@
                                         <i class="win-modal-score-star star fas fa-star empty-star" title="no star"></i>
                                     </div>
                                 </div>
-                                <div class="col-12 text-center p-0">
+                                <div class="col-12 text-center">
                                     <button id="high-score-modal-close-btn" type="button" class="btn btn-light circle-btn tick-btn" data-dismiss="modal" aria-label="Close button"> 
                                         <i class="fas fa-check" aria-hidden="true"></i>
                                     </button>
@@ -405,7 +401,7 @@
     <audio id="correctBingAudio" src="assets/audio/bing.wav"></audio>
     <footer class="text-uppercase">
 
-        <span>Find us on:</span>
+        <span>Find us on: </span>
     
         <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Find us on Facebook">Facebook</a>
         <a href="https://www.twitter.com" target="_blank" rel="noopener" aria-label="Find us on Twitter">Twitter</a>
