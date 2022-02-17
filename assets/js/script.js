@@ -1,5 +1,15 @@
+const startModal = Array.from(document.querySelector(".startModal"));
+const cards = Array.from(document.querySelector(".flip-card"));
+const gameGrid = document.querySelector("#game-grid")
+const scoreDisplay = document.querySelector("#score")
+const modal = document.querySelector("#infoModal");
+const span = document.querySelector(".close")[0];
+const timer = document.querySelector("#timer");
+const buttons = Array.from(document.querySelector("button"));
+
+const deckOfCards = [chicken, cow, dog, goat, goose, horse, pig, sheep]
 document.addEventListener("DOMContentLoaded", function() {
-  let buttons = document.getElementsByTagName("button");
+  
   for (let button of buttons) {
     button.addEventListener("click, function"() {
 
@@ -8,14 +18,10 @@ document.addEventListener("DOMContentLoaded", function() {
 })
   //card options
 
-  let deckOfCards = [chicken, cow, dog, goat, goose, horse, pig, sheep]
+  
     
 deckOfCards.sort(() => 0.5 - Math.random())
 
-const gameGrid = document.querySelector("game-grid")
-const scoreDisplay = document.querySelector("score")
-const cardsChosen = document.querySelector("cardsChosen")
-const cardsChosenId = document.querySelector("cardsChosenId")
 
 //game-grid
  for (let card of deckOfCards) {
@@ -74,8 +80,7 @@ if (document.readyState == 'loading') {
 }
 
 function ready() {
-  let startModal = Array.from(document.getElementsByClassName("startModal"));
-  let cards = Array.from(document.getElementsByClassName("flip-card"));
+  
   let game = new FarmyardFlip(100 cards);
 
   overlay.forEach(overlay => {
@@ -128,7 +133,7 @@ while ((currentIndex) !== 0) {
 }
 return cards;
 }    
-const deck = document.querySelector("flip-cards");
+
 
 function startGame() {
   const shuffledCards = shuffle(cards);
@@ -192,11 +197,7 @@ function muteButton() {
   }
 }
 //Information button
-const modal = document.getElementById("infoModal");
 
-const btn = document.getElementById("infoModal");
-
-const span = document.getElementsByClassName("close")[0];
 
 btn.onclick = function() {
   modal.style.display = "block";
@@ -232,7 +233,7 @@ startGame() {
     stars[i].style.visibility = "visible";
   }
   //reset timer
-  let timer = document.querySelector("timer");
+  
   timer.innerHTML = "0 mins 0 secs";
   clearInterval(interval);
 }
