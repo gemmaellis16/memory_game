@@ -1,11 +1,12 @@
 const startModal = Array.from(document.querySelector(".startModal"));
 const cards = Array.from(document.querySelector(".flip-card"));
-const gameGrid = document.querySelector("#game-grid")
-const scoreDisplay = document.querySelector("#score")
+const gameGrid = document.querySelector("#game-grid");
+const scoreDisplay = document.querySelector("#score");
 const modal = document.querySelector("#infoModal");
 const span = document.querySelector(".close")[0];
 const timer = document.querySelector("#timer");
 const buttons = Array.from(document.querySelector("button"));
+const increaseFlipCard = Array.from(document.querySelector("selection-button"));
 
 const deckOfCards = [chicken, cow, dog, goat, goose, horse, pig, sheep]
 document.addEventListener("DOMContentLoaded", function() {
@@ -16,13 +17,23 @@ document.addEventListener("DOMContentLoaded", function() {
     })
   }
 })
-  //card options
+  //level options
 
-  
-    
-deckOfCards.sort(() => 0.5 - Math.random())
+  let count = 0;
 
+  function increaseFlipCard() {
+    for (let i = 1; i < count; i++) {
+      const flipCard = document.createElement("img");
+      flipCard.src = "assets/images/logo.png";
+      cards.appendChild(flipCard)
+    }
+    increaseFlipCard.addEventListener("click", addCards(16));
 
+    function addCards(amountOfTimes) {
+      for (let 1 = 0; 1 < amountOfTimes; 1++) {
+        print increaseFlipCard();
+      }
+    }
 //game-grid
 
  
@@ -263,7 +274,6 @@ click() {
 }
 }
 
-//Button easy/med/hard sourced from https://github.com/AJGreaves/picflip/blob/master/assets/js/game.js
 
 
 
