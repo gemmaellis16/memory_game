@@ -6,7 +6,7 @@ const modal = document.querySelector("#infoModal");
 const span = document.querySelector(".close")[0];
 const timer = document.querySelector("#timer");
 const buttons = Array.from(document.querySelector("button"));
-const increaseFlipCard = Array.from(document.querySelector("selection-button"));
+const changeDifficulty = Array.from(document.querySelector("selection-button"));
 
 const deckOfCards = [chicken, cow, dog, goat, goose, horse, pig, sheep]
 document.addEventListener("DOMContentLoaded", function() {
