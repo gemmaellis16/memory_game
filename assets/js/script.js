@@ -20,12 +20,37 @@ document.addEventListener("DOMContentLoaded", function() {
   //level options
 
   let count = 0;
+  let randomCards = [];
+  let easyButton = ['cow', 'chicken', 'dog', 'goat'];
+  let mediumButton = ['cow', 'chicken', 'dog', 'goat', 'goose', 'horse'];
+  let hardButton = ['cow', 'chicken', 'dog', 'goat', 'goose', 'horse', 'pig', 'sheep'];
 
-  function increaseFlipCard() {
+  function changeDifficulty(difficulty) {
+
+    if (difficulty === undefined || === 2) {
+      randomCards = mediumButton.slice()
+    } else if (difficulty === 1) {
+      randomCards = easyButton.slice() 
+    } else if (difficulty === 2) {
+      randomCards = mediumButton.slice()
+    } else if (difficulty === 3) {
+      randomCards = hardButton.slice()
+    
+  }
+   console.log(randomCards);
+}
+function getCard() {
+  answer = randomCards[Math.floor(Math.random()*randomCards.length)]
+}
+changeDifficulty();
+getCard();
+
+
+  //function increaseFlipCard() {
     for (let i = 1; i < count; i++) {
       const flipCard = document.createElement("img");
       flipCard.src = "assets/images/logo.png";
-      cards.appendChild(flipCard)
+      cards.appendChild(flipCard);
     }
     increaseFlipCard.addEventListener("click", addCards(16));
 
@@ -33,11 +58,12 @@ document.addEventListener("DOMContentLoaded", function() {
       for (let 1 = 0; 1 < amountOfTimes; 1++) {
         print increaseFlipCard();
       }
-    }
+    } 
+    
 //game-grid
 
  
-
+//
  //flip cards
  function increaseFlipCard() {
    const flipCard = this.getAttribute(".flip-card")
@@ -272,7 +298,7 @@ winner() {
 click() {
   this.clicksound.play();
 }
-}
+} //
 
 
 
