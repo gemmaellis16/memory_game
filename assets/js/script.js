@@ -24,14 +24,12 @@ deckOfCards.sort(() => 0.5 - Math.random())
 
 
 //game-grid
- for (let card of deckOfCards) {
-   const nameRef = document.createElement("img");
-   gridRef.insertAdjacentHTML("beforeend", `${card.name}':${index}`)  
- }
+
+ 
 
  //flip cards
- function flipCard() {
-   const cardId = this.getAttribute("flip-card")
+ function increaseFlipCard() {
+   const flipCard = this.getAttribute(".flip-card")
    cardsChosen.push(deckOfCards[cardId].name)
    cardsChosenId.push(cardId)
    this.setAttribute('src', deckOfCards[cardId].img)
@@ -43,7 +41,7 @@ deckOfCards.sort(() => 0.5 - Math.random())
 //Popovers with username /level of difficulty
 /*Clicking level buttons*/
 
-$(".selctionButton").click(function () {
+  $(".selctionButton").click(function () {
   $(".menu-page").removeClass("d-block");
   $(".menu-page").addClass("d-none");
   $(".game-window").removeClass("d-none");
@@ -53,7 +51,7 @@ $(".selctionButton").click(function () {
   showCards(amount);
   amountFlips = 0;
   openedCardCount = 0;
-  steps.innerHTML = " Flips: " + amountFlips;
+  flips.innerHTML = " Flips: " + amountFlips;
   level.innerHTML = " Level: " + $(this).text();
 });
 
@@ -81,7 +79,7 @@ if (document.readyState == 'loading') {
 
 function ready() {
   
-  let game = new FarmyardFlip(100 cards);
+  let game = new FarmyardFlip(16 cards);
 
   overlay.forEach(overlay => {
     overlay.addEventListener('click', () => {
@@ -136,7 +134,7 @@ return cards;
 
 
 function startGame() {
-  const shuffledCards = shuffle(cards);
+  const shuffledCards = shuffle(".flip-cards);
 
   for (let shuffle of shuffledCards) {
     [].forEach.call(shuffledCards, function(item){
@@ -148,7 +146,7 @@ window.onload = startGame();
 
 //Function to check the cards
 function checkForMatch() {
-  const cards = document.querySelectorAll('flip-cards')
+  const cards = document.querySelectorAll(".flip-cards");
   const firstCardId = cardsChosenId[0]
   const secondCardId = cardsChosenId[1]
   if (cardsChosen[0] === cardsChosen[1])
@@ -161,7 +159,7 @@ cardsChosenId = []
 scoreDisplay.textContent = cardsWon.length
 if (cardsWon.length === deckOfCards.length/2)
 scoreDisplay.textContent = 'You are a winner!' 
-}
+};
 
 
 
@@ -171,16 +169,16 @@ scoreDisplay.textContent = 'You are a winner!'
 
 
 //Scoreboard sourced from https://stackoverflow.com/questions/40993396/add-a-score-counter-to-a-game-using-html-and-javascript/47168970
-const scoreBoard = document.getElementbyId('scoreBoard');
-    scoreBoard.innerHTML=Score;
-const score=0;
+const scoreBoard = document.getElementbyId("#score");
+    scoreBoard.innerHTML= score;
+const score = 0;
 if (mult == x*y) 
         {
-            Score=Score+1;
+            score=score+1;
     }
     else 
     {
-            Score=Score-1;
+            score=score-1;
     }
   
 
@@ -188,28 +186,16 @@ if (mult == x*y)
 
 //mute button
 function muteButton() {
-  const audio = documenent.getElementById("audioPlayer");
+  let audio = documenent.getElementById(".audioPlayer");
   if (audio.mute == false){
-    document.getElementById("audioPlayer").muted = true;
+    document.getElementById(".audioPlayer").muted = true;
   } else {
     audio.mute = true
-    document.getElementById("audioPlayer").muted = false
+    document.getElementById(".audioPlayer").muted = false
   }
 }
-//Information button
 
 
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-span.onclick = function() {
-  modal.style.display = "none";
-}
-window.onclick = function(event) {
-  if (event.target == infoModal) {
-    modal.style.display = "none";
-  }
-}
 
 
 //Reset button
@@ -245,7 +231,7 @@ startGame() {
  
 
 //Audio for cards sourced from https://www.youtube.com/watch?v=3uuQ3g92oPQ
-class soundcontrol {
+class audioPlayer {
   constructor() {
     this bgsound = new Audio('assets/audio/oldMcdonald.mp3');
     this flipsound = new Audio('assets/audio/flip.wav');
@@ -278,42 +264,6 @@ click() {
 }
 
 //Button easy/med/hard sourced from https://github.com/AJGreaves/picflip/blob/master/assets/js/game.js
-$('#easyButton').click(function() {
-  easyButton();
-  difficultyButton(easyHighScore);
-});
 
-$('#mediumButton').click(function() {
-  mediumButton();
-  difficultyButton(mediumHighScore);
-});
-
-$('#hardButton').click(function() {
-  hardButton();
-  difficultyButton(hardHighScore);
-});
-
-function easyButton() {
-  $('.my-card-column-medium, .my-card-column-hard').addClass('invisible').removeClass('visible');
-  $('#dashboard-high-score-text').text('Easy mode high score');
-}
-
-function mediumButton() {
-  $('.my-card-column-medium').addClass('visible').removeClass('invisible');
-  $('.my-card-column-hard').addClass('invisible').removeClass('visible');
-  $('#dashboard-high-score-text').text('Medium mode high score');
-}
-
-function hardButton() {
-  $('.my-card-column-medium').addClass('visible').removeClass('invisible');
-  $('.my-card-column-hard').addClass('visible').removeClass('invisible');
-  $('#dashboard-high-score-text').text('Hard mode high score');
-}
-
-function difficultyButton(score) {
-  activeHighScore = score;
-  displayScore(activeHighScore, dashStar);
-  resetGame();
-}
 
 
