@@ -17,16 +17,58 @@ for (let card of cards) {
     this.classList.add("flip")
   })}
 
-  //match cards
-  let selectedPairs = getElementsByClassName("flip-card-inner")
-  console.log(selectedPairs)
+  //matching cards
+  function checkMatch() {
+    selectedPairs.push(this);
+    const len = selectedPairs.length;
 
-  for (let selected of selectedPairs) {
-    selectedPairs
+    if (len === 2) {
+      moveCounter();
+      if (selectedPairs[0].type === selectedPairs[1].type) {
+        matched();
+      } else {
+          unmatched();
+        }
+      }
+    };
+    function matched() {
+      selectedPairs[0].classList.add("match");
+      selectedPairs[1].classList.add("match");
+      selectedPairs[0].classList.remove("show", "open");
+      selectedPairs[1].classList.remove("show", "open");
+      selectedPairs = [];
+    }
+  //when they don't match
+
+  function unmatched() {
+    selectedPairs[0].classList.add("unmatched");
+    selectedPairs[1].classList.add("unmatched");
+    disable();
+
+    setTimeout(function() {
+      selectedPairs[0].classList.remove("show", "open", "unmatched");
+      selectedPairs[1].classList.remove("show", "open", "unmatched");
+      
+      enable();
+      selectedPairs = [];
+    }, 1100);
   }
+// disable cards temporarily
+function disable() {
+  Array.prototype.filter.call(cards, function(card) {
+    card.classList.add('disabled');
+  });
+}
+//enable cards and disable matched cards
+function enable() {
+  Array.prototype.filter.call(cards, function(card) {
+    card.classList.remove('disabled');
+    for (let i = 0; i < matchedCard.length; i++) {
+      matchedCard[i].classList.add("disabled");
+    }
+  });
 
-
-
+  }
 
 
 
@@ -98,36 +140,10 @@ for (let card of cards) {
 
 
 
-
-
-  //function increaseFlipCard() {
-    //for (let i = 1; i < count; i++) {
-      //const flipCard = document.createElement("img");
-      //flipCard.src = "assets/images/logo.png";
-      //cards.appendChild(flipCard);
-    //}
-    //increaseFlipCard.addEventListener("click", addCards(16));
-
-    //function addCards(amountOfTimes) {
-      //for (let i = 0; 1 < amountOfTimes; 1++); {
-        //print increaseFlipCard();
-      //}
-    //} 
     
 //game-grid
 
  
-//
- //flip cards
- //function increaseFlipCard() {
-   //const flipCard = this.getAttribute(".flip-card")
-   //cardsChosen.push(deckOfCards[cardId].name)
-   //cardsChosenId.push(cardId)
-   //this.setAttribute('src', deckOfCards[cardId].img)
-   //if (cardsChosen.length === 2) [
-     //setTimeout(checkForMatch, 500)
-   //]
- //}
 
 //Popovers with username /level of difficulty
 /*Clicking level buttons*/
