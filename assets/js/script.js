@@ -1,80 +1,136 @@
 
-const gameGrid = document.querySelector("#game-grid");
-const scoreDisplay = document.querySelector("#score");
-const modal = document.querySelector("#infoModal");
-const span = document.querySelector(".close")[0];
-const timer = document.querySelector("#timer");
-const buttons = Array.from(document.querySelector("button"));
+//const gameGrid = document.querySelector("#game-grid");
+//const scoreDisplay = document.querySelector("#score");
+//const modal = document.querySelector("#infoModal");
+//const timer = document.querySelector("#timer");
+//const buttons = Array.from(document.querySelector("button"));
 // const changeDifficulty = Array.from(document.querySelector("selection-button"));
 
+//card array
+const deckOfCards = [
+  {
+    name: "horse",
+    img: 'assets/images/horse.png'
+  },
+  {
+    name: "horse",
+    img: 'assets/images/horse.png'
+  },
+  {
+    name: "chicken",
+    img: 'assets/images/chicken.png'
+  },
+  {
+    name: "chicken",
+    img: 'assets/images/chicken.png'
+  },
+  {
+    name: "cow",
+    img: 'assets/images/cow.png'
+  },
+  {
+    name: "cow",
+    img: 'assets/images/cow.png'
+  },
+  {
+    name: "dog",
+    img: 'assets/images/dog.png'
+  },
+  {
+    name: "dog",
+    img: 'assets/images/dog.png',
+  },
+  {
+    name:  "goat",
+    img: 'assets/images/goat.png',
+  },
+  {
+    name: "goat",
+    img: 'assets/images/goat.png'
+  },
+  {
+   name: "goose",
+    img: 'assets/images/goose.png'
+  },
+
+  {
+    name: "goose",
+    img: 'assets/images/goose.png'
+  },
+
+  {
+    name: "pig",
+    img: 'assets/images/pig.png'
+  },
+
+  {
+    name: "pig",
+    img: 'assets/images/pig.png'
+  },
+
+  {
+    name: "sheep",
+    img: 'assets/images/sheep.png'
+  },
+
+ { 
+    name: "sheep",
+    img: 'assets/images/sheep.png',
+},
+
+]
+
 //flipping the card
+function flipCard() 
 let cards = document.getElementsByClassName("flip-card-inner")
-console.log(cards)
+console.log(cards);
 
 for (let card of cards) {
   console.log(card)
   card.addEventListener("click", function() {
-    this.classList.add("flip")
-  })}
-
-  //matching cards
-  function checkMatch() {
-    selectedPairs.push(this);
-    const len = selectedPairs.length;
-
-    if (len === 2) {
-      moveCounter();
-      if (selectedPairs[0].type === selectedPairs[1].type) {
-        matched();
-      } else {
-          unmatched();
-        }
-      }
-    };
-    function matched() {
-      selectedPairs[0].classList.add("match");
-      selectedPairs[1].classList.add("match");
-      selectedPairs[0].classList.remove("show", "open");
-      selectedPairs[1].classList.remove("show", "open");
-      selectedPairs = [];
-    }
-  //when they don't match
-
-  function unmatched() {
-    selectedPairs[0].classList.add("unmatched");
-    selectedPairs[1].classList.add("unmatched");
-    disable();
-
-    setTimeout(function() {
-      selectedPairs[0].classList.remove("show", "open", "unmatched");
-      selectedPairs[1].classList.remove("show", "open", "unmatched");
-      
-      enable();
-      selectedPairs = [];
-    }, 1100);
-  }
-// disable cards temporarily
-function disable() {
-  Array.prototype.filter.call(cards, function(card) {
-    card.classList.add('disabled');
-  });
+    this.classList.add("flip");
+  })
 }
-//enable cards and disable matched cards
-function enable() {
-  Array.prototype.filter.call(cards, function(card) {
-    card.classList.remove('disabled');
-    for (let i = 0; i < matchedCard.length; i++) {
-      matchedCard[i].classList.add("disabled");
-    }
-  });
 
-  }
+///logic
+//if(selectedCards.length === 2){
+  //if(selectedCards[0].getAttribute('name') === 
+  //selectedCards[1].getAttribute('name')
+  //){
+    //console.log("match");
+  //} else {
+    //console.log("incorrect");
+  //}
+//}
+  //matching cards
+  //function matchCards()
 
+  //shuffle cards
+  //level selection
+  //reset button
+  //scoreboard
+  //flip counter
+  //score counter
+  //timer
+  //mute audio
+  //audio for cards
+  //pop up modals
 
+// FLIPS COUNT
+//let flips = 0;
+//let counter = document.querySelector("#flips");
+//function flipCounter(){    
+  //flips++;    
+  //counter.innerHTML = flips;
 
-
-
-
+  //if(flips === 1){
+    //  second = 0;
+      //minute = 0;
+      //hour = 0;
+//startTimer();
+      
+  //}
+//}
 
 
 
@@ -162,18 +218,18 @@ function enable() {
   //level.innerHTML = " Level: " + $(this).text();
 //});
 
-$(".btn-restart").click(function () {
-  clearTimeout(wrongGuessTimeout);
-  clearTimeout(timerTimeout);
-  $(".menu-page").removeClass("d-none");
-  $(".menu-page").addClass("d-block");
-  $(".game-window").removeClass("d-block");
-  $(".game-window").addClass("d-none");
-  $("#gameEnd").modal("hide");
-  $("#playWindow").modal("show");
-  timer.innerHTML = "Time: 00:00";
-  stopTimer();
-});
+//$(".btn-restart").click(function () {
+  //clearTimeout(wrongGuessTimeout);
+  //clearTimeout(timerTimeout);
+  //$(".menu-page").removeClass("d-none");
+  //$(".menu-page").addClass("d-block");
+  //$(".game-window").removeClass("d-block");
+  //$(".game-window").addClass("d-none");
+  //$("#gameEnd").modal("hide");
+  //$("#playWindow").modal("show");
+  //timer.innerHTML = "Time: 00:00";
+  //stopTimer();
+//});
 
 
 
@@ -228,9 +284,9 @@ $(".btn-restart").click(function () {
 //Shuffle - sourced by https://www.better.dev/build-a-memory-matching-game-in-javascript
 //// Fisher-Yates (aka Knuth) Shuffle
 //function shuffle(cards) {
-//const currentIndex = cards.length, temporaryValue, randomIndex;
+//const deckOfCards = cards.length, temporaryValue, randomIndex;
 
-//while ((currentIndex) !== 0) {
+//while ((Deck) !== 0) {
   //randomIndex = Math.floor(Math.random() * currentIndex);
   //currentIndex -= 1;
   //temporaryValue = cards[currentIndex];
