@@ -1,22 +1,10 @@
 
-<<<<<<< HEAD
 # **![Farmyard Flip](docs/screenshots/responsive.png)**
-=======
-# **![Dr Chick Farmyard Flip](assets/images/responsive-image.png)**
-(assets/css/images/responsive-image.png)
-
-View the live project [here](https://gemmaellis16.github.io/memory-game/)
->>>>>>> 0e6803dddfeb04ecd217648468e9cb4b151cab8e
 
 
 ## **Project Aim**
 
-<<<<<<< HEAD
 Welcome to this memory game for children aged 3-5 years age. This simple game is easy to navigate, is eye catching and helps children improve their memory.  On this site I hope you will be able to easily find the information icon about the simple rules of the game and should also able to access it on mobile, tablet and desktop.
-=======
-Welcome to this memory game for children aged 4-7 years of age. This game is easy to navigate, is eye catching and helps children improve their memory.  On this site I hope you will be able to easily find the information icon about the simple rules of the game and also able to access it on mobile, tablet and desktop.
-
->>>>>>> 0e6803dddfeb04ecd217648468e9cb4b151cab8e
 
 
 ## **Table of Contents**
@@ -83,22 +71,13 @@ Welcome to this memory game for children aged 4-7 years of age. This game is eas
 
 ### **Owner Goals**
 
-<<<<<<< HEAD
  * Clean and tidy code so that the game doesn't encouter problems.
-=======
- * Clean code so that the game doesn't encouter problems when too many buttons are clicked at once. 
-
->>>>>>> 0e6803dddfeb04ecd217648468e9cb4b151cab8e
  * A simple yet effective game that's eye catching for the children so that they want to play it time and time again. 
 
 
 ### **User Stories**
 
-<<<<<<< HEAD
 #### **As a player (aged 3-5years old) I want:**
-=======
-#### **As a player (aged 3-7years old) I want:**
->>>>>>> 0e6803dddfeb04ecd217648468e9cb4b151cab8e
 
  * To understand the main purpose of the game and be able to use the buttons correctly.
 
@@ -113,11 +92,7 @@ Welcome to this memory game for children aged 4-7 years of age. This game is eas
  * To hear audio feedback such as the applause when I have completed the game.
 
 
-<<<<<<< HEAD
  #### **As a guardian of the child I want to:**
-=======
- #### **As a caregiver of the child I want to:**
->>>>>>> 0e6803dddfeb04ecd217648468e9cb4b151cab8e
 
  * Be able to see the rules/information easily so that I can explain to the child how to play.
 
@@ -137,11 +112,7 @@ Welcome to this memory game for children aged 4-7 years of age. This game is eas
 
 #### * **Colour Scheme**
 
-<<<<<<< HEAD
 ![Colour Scheme](assets/images/colors2.png)
-=======
-![Colour Scheme](assets/images/color.png)
->>>>>>> 0e6803dddfeb04ecd217648468e9cb4b151cab8e
 
  * The colours that have been chosen are vibrant colours so there easy to see and stand out.
  The idea is that the colours are child friendly and colours that are associated with the farm.
@@ -149,11 +120,7 @@ Welcome to this memory game for children aged 4-7 years of age. This game is eas
 
 #### * **Typography**
 
-<<<<<<< HEAD
 * The idea behind the font style is taken from many web sites and applications for children, the  Bubblegum font is rounded and playful.
-=======
-* The idea behind the font style is taken from many web sites and applications for children. According to https://www.elegantthemes.com/blog/resources/kids-fonts it is versatile, highly readable and subtle, but still offers a greater degree of whimsy than the usual fonts 
->>>>>>> 0e6803dddfeb04ecd217648468e9cb4b151cab8e
 
 #### * **Imagery**
 
@@ -237,19 +204,10 @@ The W3C Markup Validator and W3C CSS Validator and JSLint were used to validate 
 * As a user, I want to easily understand the game and to be kept interested.
 
     - When entering the site users will see a a pop up modal to choose their level.
-<<<<<<< HEAD
 
     - On the main page, to the left of the screen the level will be shown then the to the right will be the page title and different buttons.
 
     - Upon scrolling the page the main card game will appear large and the center/right of the page. 
-=======
-
-    - On the main page, the levels will be shown at the top left and at the bottom left will be the  different buttons such as the information, reset, mute and score.
-
-    - Then to the top right the page header, score, timer and number of flips will appear in red and visually appealing. 
-
-    - The main card game will appear big and to the center-right of the page. 
->>>>>>> 0e6803dddfeb04ecd217648468e9cb4b151cab8e
 
 * As a user, I am curious to know more about the game
 
@@ -262,11 +220,7 @@ The W3C Markup Validator and W3C CSS Validator and JSLint were used to validate 
 
  - Attractive colours, buttons and sounds.
 
-<<<<<<< HEAD
  - Not too much content.
-=======
- - Not too many colours and little content.
->>>>>>> 0e6803dddfeb04ecd217648468e9cb4b151cab8e
 
 * As a user, I want appealing sounds
 
@@ -318,19 +272,11 @@ The background [image](assets/css/images/farm4.jpg) is of a farm landscape to br
 
 #### **Pop up Modal**
 
-<<<<<<< HEAD
 The main idea to put a[pop up modal](screenshots/cover-text) and the beginning of the game was to grab the users attention immediately - to choose a level (easy, medium or hard) .
 
 #### **Main Page**
 
 The [Main Page](docs/screenshots/animals.png) is based on a farm theme - as its simple and eye catching for the user and lots of children (3-5 years) have experience with learning about farm animals (especially in the rural area we live in). It is in two columns (taken from Bootstrap) to appear neat and tidy on the page with easily identifiable Font awesome icons to attract the user. 
-=======
-The main idea to put a[pop up modal](docs/screenshots/modal) and the beginning of the game was to grab the users attention immediately - by personilising it through choosing a level (easy, medium or hard).
-
-#### **Main Page**
-
-The [Main Page](docs/screenshots/) is based on a farm theme - as its simple and eye catching for the user and lots of children (2-5 years) have experience with learning about farm animals (especially in the rural area we live in). It is in two columns (taken from Bootstrap) to appear neat and tidy on the page with easily identifiable Font awesome icons to attract the user. 
->>>>>>> 0e6803dddfeb04ecd217648468e9cb4b151cab8e
 
 #### **Buttons**
 
@@ -339,14 +285,10 @@ The [buttons](docs/screenshots/buttons.png) icons were used as they are widely k
 - "Mute" button to turn the sound on/off as the user wishes.
 - "Reset" button to start the game over.
 - "Star" symbol for the scoreboard.
-<<<<<<< HEAD
 
 #### **Counters** 
 
 The time, score and flip [counters](docs/screenshots/counters.png) are large enough and placed at the top of the game grid for the users to see during the game and placed at the top together so the users can keep record of their progress.
-=======
-- "Easy/Med/Hard" levels.
->>>>>>> 0e6803dddfeb04ecd217648468e9cb4b151cab8e
 
 
 #### **Cards**
@@ -355,33 +297,18 @@ The [cards](docs/screenshots/) were chosen becuase they were farm animals - and 
 
 The number of cards were chosen (easy - 8) mainly because it was important to keep the number low as the user for this specific game is designed to be for 3-7 year olds. 
 
-<<<<<<< HEAD
 The number of cards were chosen (easy - 8) mainly because it was important to keep the number low for the age range targeted for the game.
 2 rows of 4 coloums on a desktop.
 3 rows of 3/4 coloumn on mobile and desktop
-=======
->>>>>>> 0e6803dddfeb04ecd217648468e9cb4b151cab8e
 
 The number of cards on the medium level (12) were chosen as its a gradual step up and would fit nicely on 3 rows of 4 coloumn on a desktop.
 
 The number of cards on the hard level (16) were chosen agian for the gradual step up and would fit nicely on a 4x4 basis.
 
 
-<<<<<<< HEAD
 #### **Contact**
 
 At the bottom of the page I placed the [social media links](/docsscreenshots/footer.png) so that it would catch the attention of the users if they had any questions for the developer. They then have to enter their contact details. 
-=======
-#### **Main heading/Counter**
-
-The main [heading](docs/screenshots/heading.png) is large and eye catching and the score/timer/flips counter are above the card grid so that the child can keep a record of the amount of time they take, score and the amount of moves they take to complete the game. 
-
-
-
-#### **Contact**
-
-At the bottom of the page I placed the [Social Media links](docs/screenshots/footer.png) so that it would link to the social media sites if the caregvier had any questions for the developer - the children would not be able to access this as they have to be over 13 years of age to have an account with Facebook/Twitter/Instagram. 
->>>>>>> 0e6803dddfeb04ecd217648468e9cb4b151cab8e
 
 [Back to top](#table-of-contents)
 
@@ -404,7 +331,6 @@ At the bottom of the page I placed the [Social Media links](docs/screenshots/foo
 
 * The website was tested on Google Chrome and Safari browsers.
 
-<<<<<<< HEAD
 * The game was viewed on a variety of devices such as laptop, tablet and iphone. 
 
 [Back to top](#table-of-contents)
@@ -426,48 +352,10 @@ The levels button would not work
 * **Verdict**
 The test did not pass the criteria and didn't work as planned.
 
-=======
-
-[Back to top](#table-of-contents)
-
-#### * **[Cards](docs/screenshots/.png)**
-
-* **Idea**
-I wanted to ensure that the cards were working accordingly
-
-* **Utilization**
-I implemented the card grid using Bootstrap, which ensured an effective overall structure and lay out to the grid. CSS was used to overwrite the default settings and made the grid in line with the overall webite.
-
-* **Test**
-To test the card grid, I clicked all the cards to make sure they all flipped properly. If the two cards matched they should stay flipped over and the score would increase. If they didn't match they would flip back over.
-
-* **Result**
-The card grid appears how I would have expected it on all browsers and devices. 
-
-* **Verdict**
-The test has passed all the criteria and works like planned.
-
-### [Modals](screenshots/modal-image.png)
-* **Idea**
-I wanted to use a modal that would allow the user to choose what level they wanted upon entering the main game. 
-
-* **Utilisation**
-I used Bootstrap to include the modal on the page and this was positioned to the center of the page and the text was aligned left. I used the same colours as I did on my contact us form to keep consistency throughout the pages. 
-
-* **Test**
-Initially the modal worked succesfully however the next day it didn't work. So every effort was used to check the problem. I realised I had deleted a bootstrap link (because I had )
-
-* **Result**
-The modal opened upon entering the screen.
-
-* **Verdict**
-The modal works as planned.
->>>>>>> 0e6803dddfeb04ecd217648468e9cb4b151cab8e
 
 ### [Buttons](docs/screenshots/buttons.png)
 
 * **Idea**
-<<<<<<< HEAD
 I wanted the information button to have a [modal](docs.screenshots/info-modal.png) appear with the rules of the game.
 I also wanted the reset button to reset the counters (score, time and flips) when pressed on 
 As well as muting the audio
@@ -475,12 +363,6 @@ And the scoreboard modal
 
 * **Utilisation**
 I used a bootstrap modal for the information button.
-=======
-I wanted to use audio for the the flip, the corret match and the winner   
-
-* **Utilisation**
-I used audio from Soundjay to work
->>>>>>> 0e6803dddfeb04ecd217648468e9cb4b151cab8e
 
 * **Test**
 The information button worked succesfully on the first test.
@@ -495,11 +377,7 @@ The information button works as planned.
 The reset button partly works as planned.
 The mute and scoreboard do not work as planned.
 
-<<<<<<< HEAD
 ### [Counters](documents/screenshots/counters.png)
-=======
-### []()
->>>>>>> 0e6803dddfeb04ecd217648468e9cb4b151cab8e
 
 * **Idea**
 I wanted to enable the users to see the counters as clearly as possible at the top of the game grid.
@@ -523,11 +401,7 @@ The counters failed due to the lack of JS code.
 ### **Known Bugs**
 
 
-<<<<<<< HEAD
 * I had many issues with writing the Javascript code therefore the level selection buttons, audio(mute), scoreboard, modals, timer do not work as I was unable to write the code - due to my lack of knowledge (not a lack of time as I have spent hours and hours on it).
-=======
-* I had many issues on the mobile display trying to get the buttns to sit in the center in the of the page (screenshots/mobile-issue.png)so using float:right and position:absolute helped the issue.
->>>>>>> 0e6803dddfeb04ecd217648468e9cb4b151cab8e
 
 
 [Back to top](#table-of-contents)
@@ -596,24 +470,10 @@ Cloning means creating a local copy of the remote repository. This allows you to
 
 ### **Media** 
 
-<<<<<<< HEAD
 * All images were from [freepik](https://www.freepik.com/)
 * The back of the card Dr Chick logo was created by [hatchful](https://hatchful.shopify.com/)
 * All audio was from [freesound](https://freesound.org/)
 
-=======
-* All images were from 
- - The Dr Chick logo was created using [Hatchful](https://hatchful.shopify.com/).
- - The farm background and farm animals were sourced from [freepik](https://www.freepik.com/)
-
-* All audio files were from [soundjay](https://www.soundjay.com/)
-
-
-
-### **Aknowledgments** 
-
-* My mentor at Code Institute for their support.
->>>>>>> 0e6803dddfeb04ecd217648468e9cb4b151cab8e
 
 
 [Back to top](#table-of-contents)
