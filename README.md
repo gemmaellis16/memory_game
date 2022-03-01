@@ -4,7 +4,7 @@
 
 ## **Project Aim**
 
-Welcome to this memory game for children aged 3-5 years age. This simple game is easy to navigate, is eye catching and helps children improve their memory.  On this site I hope you will be able to easily find the information icon about the simple rules of the game and also able to access it on mobile, tablet and desktop.
+Welcome to this memory game for children aged 3-5 years age. This simple game is easy to navigate, is eye catching and helps children improve their memory.  On this site I hope you will be able to easily find the information icon about the simple rules of the game and should also able to access it on mobile, tablet and desktop.
 
 
 ## **Table of Contents**
@@ -69,13 +69,13 @@ Welcome to this memory game for children aged 3-5 years age. This simple game is
 
 ### **Owner Goals**
 
- * Clean code so that the game doesn't encouter problems when too many buttons are clicked at once.  
+ * Clean and tidy code so that the game doesn't encouter problems.
  * A simple yet effective game that's eye catching for the children so that they want to play it time and time again. 
 
 
 ### **User Stories**
 
-#### **As a player (aged 2-5years old) I want:**
+#### **As a player (aged 3-5years old) I want:**
 
  * To understand the main purpose of the game and be able to use the buttons correctly.
 
@@ -90,7 +90,7 @@ Welcome to this memory game for children aged 3-5 years age. This simple game is
  * To hear positive audio feedback such as the applause when I have completed the game.
 
 
- #### **As a parent/carer of the child I want to:**
+ #### **As a guardian of the child I want to:**
 
  * Be able to see the rules/information easily so that I can explain to the child how to play.
 
@@ -102,7 +102,7 @@ Welcome to this memory game for children aged 3-5 years age. This simple game is
  
  * To know that it's safe for my child to use and that there are no links to anything that is not child friendly. 
 
- * Be able to contact the developers if I have any questions.  
+ * Be able to contact the developers through their social media accounts if I have any questions.  
 
 [Back to top](#table-of-contents)
 
@@ -118,18 +118,18 @@ Welcome to this memory game for children aged 3-5 years age. This simple game is
 
 #### * **Typography**
 
-* The idea behind the font style is taken from many web sites and applications for children, such as Sesame Street’s web sites. The font is rounded and playful, so sans serif font is used for larger headlines and interactive UI elements, while using simpler, more traditional fonts for the more adult links at the bottom of the page. (https://www.uxmatters.com/mt/archives/2011/06effective-use-of-typography-in-applications-for-children-3.php)
+* The idea behind the font style is taken from many web sites and applications for children, the  Bubblegum font is rounded and playful.
 
 #### * **Imagery**
 
-* The background of a simple farm image was used in order to keep with the theme but not too busy to distract the user from the main game. 
+* The background of a simple farm image was used in order to keep with the theme but without too many pictures to distract the user from the main game. 
 
 
 [Back to top](#table-of-contents)
 
 #### * **Cards**
 
-Farm animals were chosen for this game because they are recognised and loved by children, especially my children! We live in a farming community so this is a perfect choice for children in my area. It is inspired by the song "Old MacDonald" as lots of children recognise the song. 
+[Farm animals](docs/screenshots/animals.png) were chosen for this game because they are recognised and loved by children, especially my children! We live in a farming community so this is a perfect choice for children in my area. It is inspired by the song "Old MacDonald" as lots of children recognise the song. 
 
 #### * **Audio**
 
@@ -186,9 +186,6 @@ These are my wireframes that I initially made however I have edited my ideas dur
 * [Coolers](https://coolors.co/)
     * Coolers was used to create the colour scheme of the game during design. 
 
-* [Jasmine] (https://jasmine.github.io/)
-This project used Jasmine to automatically test all JavaScript and jQuery code.
-
 [Back to top](#framework-libraries-&-programmes-used)
 
 ###  * **Testing**
@@ -199,36 +196,34 @@ The W3C Markup Validator and W3C CSS Validator were used to validate every page 
 
 * [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) - [Results]()
 
-* [Jasmine](https://jshint.com/) - [Results]()
-
 #### * **Testing User Stories from User Experience**
 
 * **First Time Visitor Goals**
 
 * As a user, I want to easily understand the game and to be kept interested.
 
-    - When entering the site users will see a a pop up modal to write their name and choose their level.
+    - When entering the site users will see a a pop up modal to choose their level.
 
-    - On the main page, to the left of the screen the username and level will be shown then the to the right will be the page title and different buttons()
+    - On the main page, to the left of the screen the level will be shown then the to the right will be the page title and different buttons.
 
-    - Upon scrolling the page the main card game will appear big and the center of the page. 
+    - Upon scrolling the page the main card game will appear large and the center/right of the page. 
 
 * As a user, I am curious to know more about the game
 
     - There will be a 'i' button to explain the rules.
 
-    - There will also be a contact tool at the footer of the page.
+    - There will also be a social media account at the footer of the page.
 
 
 * As a user, I want it to be simple and fun
 
  - Attractive colours, buttons and sounds.
 
- - Not too many colours and not too much content.
+ - Not too much content.
 
 * As a user, I want appealing sounds
 
-- For great audio feedback and to be kept interested.
+- For audio feedback and to be kept interested.
 
 - Sounds that are recognisable within a farm setting.
 
@@ -237,22 +232,18 @@ The W3C Markup Validator and W3C CSS Validator were used to validate every page 
 
  - Buttons should be large so they are easy to press.
 
-As a user, I want the game to be simple so that it doesn't break
+As a user, I want the game to be simple 
 
 - Only two cards can be flipped at once
 
 - It wont encouter problems if its clicked too fast
 
-* **Returning Visitor Goals and Parents**
+* **Returning Visitor Goals**
 
 * As a user, I want to see the score.  
 
     - The score gives feedback to see if they can beat it.
 
-
-* As a user, I want to see the contact info.
-
-    - This will be at the foot of the page if they encouter any problems.
 
 * As a user, I want to mute the game
 
@@ -263,9 +254,9 @@ As a user, I want the game to be simple so that it doesn't break
 
 ### * **Features**
 
- * Responsive on all device sizes.
+ * Responsive on all device sizes - due to my mentor helping me to return to previously saved changes with my JS code it has also meant that my game has lost its most recent changes and is no longer responsive on all devices (like I had recently done).
 
- * Interactive elements.
+ * Interactive elements - only the flipping of the cards and flip counter work.
 
 ### **Existing Features**
 
@@ -275,31 +266,34 @@ For the [grid](screenshots/navigation.png) I have used Boostrap.
 
 #### **Image**
 
-The background [image](assets/css/images/farm.jpg) is of a farm landscape to bring the farm landscape to the attention of the child.
+The background [image](assets/css/images/farm4.jpg) is of a farm landscape to bring the farm landscape to the attention of the child.
 
 #### **Pop up Modal**
 
-The main idea to put a[pop up modal](screenshots/cover-text) and the beginning of the game was to grab the users attention immediately - by personilising it (through entering a name) and secondly to choose a level (easy, medium or hard) .
+The main idea to put a[pop up modal](screenshots/cover-text) and the beginning of the game was to grab the users attention immediately - to choose a level (easy, medium or hard) .
 
 #### **Main Page**
 
-The [Main Page](screenshots/) is based on a farm theme - as its simple and eye catching for the user and lots of children (2-5 years) have experience with learning about farm animals (especially in the rural area we live in). It is in two columns (taken from Bootstrap) to appear neat and tidy on the page with easily identifiable Font awesome icons to attract the user. 
+The [Main Page](docs/screenshots/animals.png) is based on a farm theme - as its simple and eye catching for the user and lots of children (3-5 years) have experience with learning about farm animals (especially in the rural area we live in). It is in two columns (taken from Bootstrap) to appear neat and tidy on the page with easily identifiable Font awesome icons to attract the user. 
 
 #### **Buttons**
 
-The [buttons](screenshots/) icons were used as they are widely known symbols so for kids its easy to identify them rather than reading any words - as they may not know how to read so symbols are easy to recognise. 
+The [buttons](docs/screenshots/buttons.png) icons were used as they are widely known symbols so for kids its easy to identify them rather than reading any words - as they may not know how to read so symbols are easy to recognise. 
 - "I" symbol for the rules and information on the game
 - "Mute" button to turn the sound on/off as the user wishes.
 - "Reset" button to start the game over.
 - "Star" symbol for the scoreboard.
-- "Time" written in text to keep the time of completed game.
-- "Flips" written in text to keep record of how many times cards were flipped over.
+
+#### **Counters** 
+
+The time, score and flip [counters](docs/screenshots/counters.png) are large enough and placed at the top of the game grid for the users to see during the game and placed at the top together so the users can keep record of their progress.
+
 
 #### **Cards**
 
 The cards were chosen becuase they were farm animals - and I chose similiar looking animals (front facing with big eyes) so that they kept with the theme and looked more attractive.
 
-The number of cards were chosen (easy - 8) mainly because it was important to keep the number low as the user for this specific game is designed to be for 2-5 year olds. 
+The number of cards were chosen (easy - 8) mainly because it was important to keep the number low for the age range targeted for the game.
 2 rows of 4 coloums on a desktop.
 3 rows of 3/4 coloumn on mobile and desktop
 
@@ -308,16 +302,9 @@ The number of cards on the medium level (12) were chosen as its a gradual step u
 The number of cards on the hard level (16) were chosen agian for the gradual step up and would fit nicely on a 4x4 basis.
 
 
-#### ****
-
-
-
-#### ****
-
-
 #### **Contact**
 
-At the bottom of the page I placed the [contact form](screenshots/) so that it would catch the attention of the users if they had any questions for the developer. They then have to enter their contact details. 
+At the bottom of the page I placed the [social media links](/docsscreenshots/footer.png) so that it would catch the attention of the users if they had any questions for the developer. They then have to enter their contact details. 
 
 [Back to top](#table-of-contents)
 
@@ -331,102 +318,76 @@ At the bottom of the page I placed the [contact form](screenshots/) so that it w
 
 * Include information on how their data will be used (GDPR-Law).
 
+* Username
+
+
 
 ### * **Further Testing**
 
 * The website was tested on Google Chrome and Safari browsers.
 
-* The game was viewed on a variety of devices such as desktop, laptop, tablet and iphone. 
-
-* A large amount of testing was conducted to ensure that all buttons were working correctly.
-
-* My toddler and some of my pupils in school were asked to play the game and asked to give feedback.
+* The game was viewed on a variety of devices such as laptop, tablet and iphone. 
 
 [Back to top](#table-of-contents)
 
-#### * **[Navigation bar](screenshots/navbar-image.png)**
+#### * **[Level Buttons](docs/screenshots/levels.png)**
 
 * **Idea**
-I wanted to ensure that the navigation bar was working accordingly at the top of the page and when clicked on, the navigation links would take the user to the page of their choice. For simple and attractive purposes the navigation bar would then convert to a hamburger icon with a dropdown menu on mobile devices.
+I wanted to ensure that the levels buttons were working accordingly at the top of the page and when clicked on, they would draw a certain amount of cards. For simple and attractive purposes the navigation bar would then convert stay the same size but appear at the top of the page positioned at the center.
 
 * **Utilization**
-I implemented the navigation bar using Bootstrap, which ensured an effective overall structure and lay out to the navbar. CSS was used to overwrite the default settings and made the navbar in line with the overall webite. I also used Bootstrap to implement the hamburger sign for mobile devices.
+I implemented the levels button using Bootstrap, which ensured an effective overall structure and lay out to the buttons. 
 
 * **Test**
-To test the navigation bar, I clicked all the links to make sure it worked properly. I have also opened the website in various browers (safari, google chrome, mozilla firefox) to make sure it worked on all browsers and devices. On mobile the navigation transformed into the hamburger sign with a dropdown menu.
+Unfortunately I was unable to get the JS code to work for the buttons 
 
 * **Result**
-The navigation bar appears how I would have expected it on all browsers and devices. However on the index page (main page) while on mobile device the dropdown does not appear as it is as it's blurred by the text-cover box. - So I have to hide the cover box in mobile display in order to see the dropdown menu.
+The levels button would not work
 
 * **Verdict**
-The test has passed all the criteria and works like planned.
+The test did not pass the criteria and didn't work as planned.
 
-### [Modal](screenshots/modal-image.png)
+
+### [Buttons](docs/screenshots/buttons.png)
+
 * **Idea**
-I wanted to use a modal that would allow the user to book on the main page (a place were it's clearly visible and easy to get to for a returning user).
+I wanted the information button to have a [modal](docs.screenshots/info-modal.png) appear with the rules of the game.
+I also wanted the reset button to reset the counters (score, time and flips) when pressed on 
+As well as muting the audio
+And the scoreboard modal
 
 * **Utilisation**
-I used Bootstrap to include the modals on the website and this was positioned to the left of the box as the text was also aligned left. I used the same colours as I did on my contact us form to keep consistency throughout the pages. 
+I used a bootstrap modal for the information button.
 
 * **Test**
-Initially the modal worked succesfully however the next day it didn't work. So every effort was used to check the problem. I realised I had deleted a bootstrap link (because I had )
+The information button worked succesfully on the first test.
+The reset button only worked to reset the flip counter due to the JS code.
+The scoreboard and audio did not work due to the lack of JS code.
 
 * **Result**
-The modal opened up when the Book now button was clicked and appeared on screen.
+The informaiton button opened but the three other buttons would not respond. 
 
 * **Verdict**
-The modal works as planned.
+The information button works as planned.
+The reset button partly works as planned.
+The mute and scoreboard do not work as planned.
 
-### [Audio](audio/relaxation.m4a)
+### [Counters](documents/screenshots/counters.png)
 
 * **Idea**
-I wanted to use audio as a taster for users of what to expect when in the relaxation during a class. This would allow the user to determine if they would like to hear more by coming to a session.  
+I wanted to enable the users to see the counters as clearly as possible at the top of the game grid.
 
 * **Utilisation**
-I used an iphone recording device called 'voice memos' to record the audio and used one of the relaxation scripts I used during my classses in the past. To ensure they didn't miss this it was in the about section (to learn more about the classes) and I provided a clear download icon so that the user would know where to click.
+I created the counters on the index.html and wanted to create the JS code to interact with the game
 
 * **Test**
-The audio worked succesfully on the first test.
+The counters did not work due to the lack of JS Code. 
 
 * **Result**
-The audio opened up when the Download button was clicked and appeared on screen.
+The flips counter partly worked - it only counted after clicking on the second card and also counted if you clicked on the cards twice - it would still register the flipped cards as a new flip.
 
 * **Verdict**
-The audio works as planned.
-
-### [Student Registration Form](downloads/student-form.pdf)
-
-* **Idea**
-I wanted to enable the users to download and fill in the student registration form (if they would prefer) before the session so there is no rush at the beginning of the session. This is important for the teacher to have as it gives the teacher an idea of any health issues so that the teacher would be able to adapt the sessions/poses for the individual. 
-
-* **Utilisation**
-I copied a student reg template I used in the past to a folder and again to keep it consistent with the audio link put a download icon next to it so that they could download the page. 
-
-* **Test**
-The file worked succesfully on the first test, 
-
-* **Result**
-The audio opened up when the Download button was clicked and appeared on screen.
-
-* **Verdict**
-The audio works as planned.
-
-### [Contact Form](screenshots/form-input.png)
-
-* **Idea**
-I want to include a contact form so that the user can contact the studio/teacher with any queries they have (even to book through this too). On the form they can enter their name, email address and write a message. I also ensured they had to fill in the fields before submitting the button. 
-
-* **Utilization**
-To create this, I made a contact page and placed the form at the top of the page. There were two fields for the name and email address then a textarea field for the message and a submit button. I also ensured the form was the same colour as the rest of the pages for consistency.
-
-* **Test**
-When I tested the form, I realised that nothing opened up and there was nothing to indicate to the user that the form was submitted. This meant it was not user friendly, so if I had more experience I would have liked to include JS to implement this.
-
-* **Result**
-The form works but after filling it in all the content dissappears so the user is left if the message was sent.
-
-* **Verdict**
-The form worked but without feedback it is not user friendly.
+The counters failed due to the lack of JS code.
 
 
 
@@ -435,7 +396,7 @@ The form worked but without feedback it is not user friendly.
 ### **Known Bugs**
 
 
-* I had many issues on the mobile display trying to get the hamburger icon to sit on the right in the [navbar](screenshots/mobile-issue.png)so using float:right and position:absolute helped the issue.
+* I had many issues with writing the Javascript code therefore the level selection buttons, audio(mute), scoreboard, modals, timer do not work as I was unable to write the code - due to my lack of knowledge (not a lack of time as I have spent hours and hours on it).
 
 
 [Back to top](#table-of-contents)
@@ -484,7 +445,17 @@ Cloning means creating a local copy of the remote repository. This allows you to
 
 ### **Code**
 
-* 
+* [Bootstrap](https://getbootstrap.com/docs/4.5/getting-started/introduction/) Bootstrap library used throughout the project to make the site responsive to the Bootstrap grid system.
+
+* I used a modal template for the information button from [Bootstrap](https://getbootstrap.com/docs/5.1/components/modal/)
+
+* The information [modal](https://github.com/AJGreaves/picflip/blob/master/index.html) and levels buttons idea were sourced from another students memory game from CI.
+
+* The [buttons](https://github.com/Code-Institute-Solutions/love-maths-2.0-sourcecode/blob/master/01-putting-the-basics-in-place/03-writing-some-html-part2/index.html) was sourced from the JavaScript Walkthrough Project from the CI course.
+
+* The [modal](https://www.w3schools.com/howto/howto_css_modals.asp*/)styling was sourced from the W3schools website.
+
+* The matching cards [code](https://www.youtube.com/watch?v=tjyDOHzKN0w)was sourced from Ania Kubów on Youtube.
 
 [Back to top](#table-of-contents)
 
@@ -494,13 +465,8 @@ Cloning means creating a local copy of the remote repository. This allows you to
 
 ### **Media** 
 
-* All images were from 
+* All images were from [freepik](https://www.freepik.com/)
 
-
-
-### **Aknowledgments** 
-
-* Tutors at Code Institute for their support.
 
 
 [Back to top](#table-of-contents)

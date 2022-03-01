@@ -314,4 +314,15 @@ footer > p {
 .label {
   width: 100vw;
 }
-  
+
+}  
+@media screen and (min-width: 1200px) {     
+  #game-grid {     
+
+    grid-template-columns: repeat(3, auto);
+    max-width: 220px;
+    margin: auto;
+    margin-left: 15px;
+    font-size: 30px;
+  }
+}
