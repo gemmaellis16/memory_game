@@ -1,5 +1,5 @@
 
-# **Farmyard Flip**
+# **![Farmyard Flip](docs/screenshots/responsive.png)**
 
 
 ## **Project Aim**
@@ -33,7 +33,6 @@ Welcome to this memory game for children aged 3-5 years age. This simple game is
 6 [Further Testing](#further-testing)
 * [Navigation](#navigation)
 * [Known Bugs](#known-bugs)
-* [Note about Commits](#note-about-commits)
 
 7 [Deployment](#deployment)
 * [Github Pages](#github-pages)
@@ -110,7 +109,7 @@ Welcome to this memory game for children aged 3-5 years age. This simple game is
 
 #### * **Colour Scheme**
 
-![Colour Scheme](assets/images/colors.png)
+![Colour Scheme](assets/images/colors2.png)
 
  * The colours that have been chosen are vibrant colours so there easy to see and stand out.
  The idea is that the colours are child friendly and colours that are associated with the farm.
@@ -190,11 +189,13 @@ These are my wireframes that I initially made however I have edited my ideas dur
 
 ###  * **Testing**
 
-The W3C Markup Validator and W3C CSS Validator were used to validate every page of the project to ensure there were no errors in the code. 
+The W3C Markup Validator and W3C CSS Validator and JSLint were used to validate every page of the project to ensure there were no errors in the code. 
 
-* [W3C Markup Validator](https://validator.w3.org/#validate_by_input) - [Index]()
+* [W3C Markup Validator](https://validator.w3.org/#validate_by_input) - [Index](docs/validator/index.pdf)
 
-* [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) - [Results]()
+* [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) - [Results](docs/validator/css.pdf)
+
+* [JSLint](https://www.jslint.com/) - [Results](docs/validator/js.pdf)
 
 #### * **Testing User Stories from User Experience**
 
@@ -255,6 +256,7 @@ As a user, I want the game to be simple
 ### * **Features**
 
  * Responsive on all device sizes - due to my mentor helping me to return to previously saved changes with my JS code it has also meant that my game has lost its most recent changes and is no longer responsive on all devices (like I had recently done).
+ It is still responsive on mobile and laptop however the grid doesn't sit to the center of the page as I had previously completed on tablet/ipad and on desktop the background image doesn't fill the whole screen.
 
  * Interactive elements - only the flipping of the cards and flip counter work.
 
@@ -319,6 +321,7 @@ At the bottom of the page I placed the [social media links](/docsscreenshots/foo
 * Include information on how their data will be used (GDPR-Law).
 
 * Username
+
 
 
 
@@ -466,6 +469,8 @@ Cloning means creating a local copy of the remote repository. This allows you to
 ### **Media** 
 
 * All images were from [freepik](https://www.freepik.com/)
+* The back of the card Dr Chick logo was created by [hatchful](https://hatchful.shopify.com/)
+* All audio was from [freesound](https://freesound.org/)
 
 
 
