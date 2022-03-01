@@ -9,7 +9,7 @@ const buttons = Array.from(document.querySelector("button"));
 const resetButtonRef = document.querySelector("#resetButton");
 
 let selectedPairs = [];
-let count = 0;
+let count = 0
 //flipping the card
 let cards = document.getElementsByClassName("flip-card-inner");
 console.log(cards);
@@ -85,8 +85,19 @@ function enable() {
 
 
 
+  //matching cards
+  //function matchCards()
 
-
+  //shuffle cards
+  //level selection
+  //reset button
+  //scoreboard
+  //flip counter
+  //score counter
+  //timer
+  //mute audio
+  //audio for cards
+  //pop up modals
 
 
 
